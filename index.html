@@ -6,15 +6,16 @@
 <title>Mausam — Your Weather. Your World.</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1E88E5">
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Mausam">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#F4F9FF;
@@ -42,7 +43,7 @@ html,body{margin:0;padding:0;}
 body{
   background:var(--bg);
   color:var(--text);
-  font-family:'Inter',sans-serif;
+  font-family:'Inter','Noto Sans Devanagari',sans-serif;
   -webkit-font-smoothing:antialiased;
 }
 button{font-family:inherit;}
@@ -241,7 +242,7 @@ svg.icon{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;str
 .ring-wrap{position:relative; width:104px; height:104px; flex:none;}
 .ring-wrap svg{transform:rotate(-90deg);}
 .ring-center{position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;}
-.ring-center .rv{font-size:22px; font-weight:800; color:var(--navy); font-family:'IBM Plex Mono',monospace;}
+.ring-center .rv{font-size:22px; font-weight:800; color:var(--navy); font-family:'IBM Plex Mono','Noto Sans Devanagari',monospace;}
 .ring-center .rv small{font-size:11px; font-weight:600; color:var(--muted);}
 .score-copy .sc-label{font-size:12px; color:var(--muted); font-weight:600; margin-bottom:4px;}
 .score-copy h3{font-size:16px; font-weight:700; color:var(--navy); margin:0 0 6px;}
@@ -270,7 +271,7 @@ svg.icon{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;str
 .tile .t-top{display:flex; align-items:center; gap:8px; color:var(--primary); margin-bottom:10px;}
 .tile .t-top svg{width:17px; height:17px;}
 .tile .t-top span{font-size:11.5px; color:var(--muted); font-weight:600;}
-.tile .t-val{font-size:19px; font-weight:800; color:var(--navy); font-family:'IBM Plex Mono',monospace;}
+.tile .t-val{font-size:19px; font-weight:800; color:var(--navy); font-family:'IBM Plex Mono','Noto Sans Devanagari',monospace;}
 .tile .t-val .unit{font-size:11px; font-weight:600; color:var(--muted); margin-left:2px;}
 .tile .t-sub{font-size:11px; color:var(--muted); margin-top:3px;}
 
@@ -289,7 +290,7 @@ svg.icon{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;str
 .gauge-card{flex:1; text-align:center;}
 .gauge-svg-wrap{position:relative; width:100%; max-width:170px; margin:0 auto;}
 .gauge-readout{position:absolute; left:0; right:0; top:58%; text-align:center;}
-.gauge-readout .gv{font-size:20px; font-weight:800; color:var(--navy); font-family:'IBM Plex Mono',monospace;}
+.gauge-readout .gv{font-size:20px; font-weight:800; color:var(--navy); font-family:'IBM Plex Mono','Noto Sans Devanagari',monospace;}
 .gauge-readout .gl{font-size:11px; font-weight:700; margin-top:1px;}
 .gauge-minmax{display:flex; justify-content:space-between; font-size:10px; color:var(--muted); padding:0 6px; margin-top:-6px;}
 .gauge-title{font-size:12.5px; font-weight:700; color:var(--navy); margin-bottom:2px;}
@@ -317,7 +318,7 @@ button.day-main{cursor:pointer;}
 .day-main .dl-day{width:48px; font-size:13.5px; font-weight:700; color:var(--navy);}
 .day-main svg.wx{width:20px; height:20px; color:var(--primary); flex:none;}
 .day-main .dl-rain{font-size:11px; color:var(--secondary); font-weight:600; width:34px;}
-.day-main .dl-min, .day-main .dl-max{font-size:12.5px; font-family:'IBM Plex Mono',monospace; width:30px;}
+.day-main .dl-min, .day-main .dl-max{font-size:12.5px; font-family:'IBM Plex Mono','Noto Sans Devanagari',monospace; width:30px;}
 .day-main .dl-min{color:var(--muted); text-align:right;}
 .day-main .dl-max{color:var(--navy); font-weight:600;}
 .range-track{flex:1; height:6px; border-radius:6px; background:var(--border); position:relative; min-width:50px;}
@@ -349,7 +350,7 @@ button.day-main{cursor:pointer;}
 .loc-icon-chip svg{width:19px; height:19px;}
 .loc-row .lr-name{font-size:14px; font-weight:700; color:var(--navy);}
 .loc-row .lr-sub{font-size:11.5px; color:var(--muted);}
-.loc-row .lr-temp{margin-left:auto; font-size:16px; font-weight:800; font-family:'IBM Plex Mono',monospace; color:var(--navy);}
+.loc-row .lr-temp{margin-left:auto; font-size:16px; font-weight:800; font-family:'IBM Plex Mono','Noto Sans Devanagari',monospace; color:var(--navy);}
 .add-loc-btn{
   width:100%; border:1.5px dashed var(--primary); background:var(--info-soft); color:var(--primary-dark);
   border-radius:var(--radius-md); padding:14px; font-size:13.5px; font-weight:700; cursor:pointer;
@@ -394,6 +395,33 @@ button.day-main{cursor:pointer;}
 
 .empty-state{text-align:center; padding:40px 20px; color:var(--muted); font-size:13.5px;}
 
+/* ============ LANGUAGE SWITCH ============ */
+.lang-switch{display:inline-flex; gap:4px; padding:4px; border-radius:100px; background:var(--card); border:1px solid var(--border);}
+.lang-switch button{border:none; background:transparent; color:var(--muted); font:inherit; font-size:13px; font-weight:600; padding:7px 14px; border-radius:100px; cursor:pointer;}
+.lang-switch button.active{background:var(--primary); color:#fff;}
+.lang-switch button:focus-visible{outline:2px solid var(--primary); outline-offset:1px;}
+.splash-lang{position:relative; z-index:2; margin-top:-40px; background:rgba(255,255,255,0.16); border-color:rgba(255,255,255,0.35);}
+.splash-lang button{color:#fff;}
+.splash-lang button.active{background:#fff; color:var(--primary-dark);}
+.profile-lang{display:flex; width:100%;}
+.profile-lang button{flex:1; padding:9px 6px;}
+
+/* ============ SIGN-IN ============ */
+#view-auth .screen-pad{padding-top:4px;}
+.auth-fields{display:flex; flex-direction:column; gap:10px;}
+.auth-fields .btn-block{margin-top:4px; border-radius:100px;}
+.auth-note{font-size:12.5px; color:var(--muted); text-align:center; margin:14px 0 0;}
+button:disabled{opacity:.6; cursor:default;}
+
+/* Account card in profile */
+.account-card{display:flex; align-items:center; gap:12px;}
+.account-avatar{width:44px; height:44px; border-radius:50%; background:var(--info-soft); color:var(--primary-dark); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:17px; flex:none; overflow:hidden;}
+.account-avatar img{width:100%; height:100%; object-fit:cover;}
+.account-avatar svg{width:22px; height:22px;}
+.account-name{font-weight:700; color:var(--navy); font-size:14px; overflow-wrap:anywhere;}
+.account-sub{font-size:12px; color:var(--muted); margin-top:2px;}
+.btn-row{display:flex; gap:10px; margin-top:12px;}
+
 @media (max-width:380px){
   .hero-temp{font-size:46px;}
   .ring-wrap{width:88px; height:88px;}
@@ -405,28 +433,48 @@ button.day-main{cursor:pointer;}
 
 <!-- ===================== SPLASH ===================== -->
 <div class="view active" id="view-splash">
+  <div class="lang-switch splash-lang" role="group" aria-label="Language">
+    <button data-lang="en">English</button><button data-lang="hi">हिंदी</button><button data-lang="mr">मराठी</button>
+  </div>
   <svg class="splash-scene" viewBox="0 0 400 230" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 160 L60 100 L110 150 L170 70 L230 150 L290 110 L340 160 L400 130 L400 230 L0 230 Z" fill="#0E4C86" opacity="0.55"/>
     <path d="M0 190 L80 140 L150 185 L220 120 L300 180 L400 150 L400 230 L0 230 Z" fill="#0B3A66" opacity="0.7"/>
   </svg>
   <div class="splash-mark">
     <div class="word">Mausam</div>
-    <div class="tag">Your Weather. Your World.</div>
+    <div class="tag" data-i18n="tagline">Your Weather. Your World.</div>
   </div>
-  <p class="splash-copy">Personalized weather insights for a healthier, safer, and better-planned day — built around what you actually do outdoors.</p>
+  <p class="splash-copy" data-i18n="splashCopy">Personalized weather insights for a healthier, safer, and better-planned day — built around what you actually do outdoors.</p>
   <div class="splash-actions">
-    <button class="btn-primary" id="get-started-btn">Get Started</button>
+    <button class="btn-primary" id="get-started-btn" data-i18n="getStarted">Get Started</button>
+  </div>
+</div>
+
+<!-- ===================== LOGIN ===================== -->
+<div class="view" id="view-auth">
+  <div class="top-back">
+    <button class="circle-btn" id="auth-back" data-i18n-aria="back"></button>
+  </div>
+  <div class="screen-pad">
+    <div class="ob-title" data-i18n="authTitle"></div>
+    <p class="ob-sub" data-i18n="authSub"></p>
+    <div class="auth-fields">
+      <input type="text" class="search-input" id="auth-name" data-i18n-ph="namePh" autocomplete="name" maxlength="40">
+      <button class="btn-block primary" id="login-btn" data-i18n="continueBtn"></button>
+    </div>
+    <div class="status-msg" id="auth-status" role="status"></div>
+    <p class="auth-note" data-i18n="localNote"></p>
   </div>
 </div>
 
 <!-- ===================== ONBOARDING ===================== -->
 <div class="view" id="view-onboarding">
   <div class="top-back" id="ob-back-wrap" style="display:none;">
-    <button class="circle-btn" id="ob-back" aria-label="Back to app"></button>
+    <button class="circle-btn" id="ob-back" data-i18n-aria="back"></button>
   </div>
   <div class="screen-pad">
-    <div class="ob-title">Which areas are<br>you interested in?</div>
-    <p class="ob-sub">Choose one — we'll tailor everything around it. You can change this anytime from Profile.</p>
+    <div class="ob-title" data-i18n="obTitle"></div>
+    <p class="ob-sub" data-i18n="obSub"></p>
     <div class="interest-grid" id="interest-grid"></div>
   </div>
 </div>
@@ -434,19 +482,19 @@ button.day-main{cursor:pointer;}
 <!-- ===================== LOCATION ===================== -->
 <div class="view" id="view-location">
   <div class="top-back">
-    <button class="circle-btn" id="back-to-role"></button>
+    <button class="circle-btn" id="back-to-role" data-i18n-aria="back"></button>
   </div>
   <div class="screen-pad" style="padding-top:6px;">
     <div class="loc-map"></div>
-    <div class="loc-title">Allow location access</div>
-    <p class="loc-sub">We use your location to provide accurate, hyperlocal weather and personalized recommendations for you.</p>
+    <div class="loc-title" data-i18n="locTitle"></div>
+    <p class="loc-sub" data-i18n="locSub"></p>
     <div class="env-banner" id="env-banner"></div>
-    <button class="btn-primary" id="gps-btn" style="background:var(--primary); color:#fff;">Allow Location Access</button>
-    <div class="divider-row">or</div>
-    <button class="btn-secondary-outline" id="manual-loc-btn">Enter Location Manually</button>
+    <button class="btn-primary" id="gps-btn" style="background:var(--primary); color:#fff;" data-i18n="allowLoc"></button>
+    <div class="divider-row" data-i18n="or">or</div>
+    <button class="btn-secondary-outline" id="manual-loc-btn" data-i18n="manualLoc"></button>
     <div id="manual-search-wrap" style="display:none; margin-top:16px;">
       <div class="search-input" style="padding:0; border:none;">
-        <input type="text" class="search-input" id="search-input" placeholder="Search city or village" autocomplete="off">
+        <input type="text" class="search-input"  id="search-input" data-i18n-ph="searchPh" autocomplete="off">
       </div>
       <div class="suggestions" id="suggestions"></div>
     </div>
@@ -458,15 +506,15 @@ button.day-main{cursor:pointer;}
 <div class="view" id="view-app">
   <div class="app-topbar">
     <div class="topbar-left">
-      <button class="avatar-btn" id="open-profile" aria-label="Profile and location" aria-haspopup="dialog"></button>
+      <button class="avatar-btn" id="open-profile" data-i18n-aria="ariaProfile" aria-haspopup="dialog"></button>
       <div class="greeting">
         <div class="hi" id="greet-hi">Good morning</div>
         <div class="place" id="greet-place"></div>
       </div>
     </div>
     <div class="topbar-actions">
-      <button class="circle-btn icon-btn" id="app-refresh" aria-label="Refresh weather"></button>
-      <button class="circle-btn icon-btn" id="open-alerts" aria-label="Alerts and suggestions" aria-haspopup="dialog"></button>
+      <button class="circle-btn icon-btn" id="app-refresh" data-i18n-aria="ariaRefresh"></button>
+      <button class="circle-btn icon-btn" id="open-alerts" data-i18n-aria="ariaAlerts" aria-haspopup="dialog"></button>
     </div>
   </div>
 
@@ -478,7 +526,7 @@ button.day-main{cursor:pointer;}
   <div class="sheet-backdrop" data-close></div>
   <div class="sheet-frame">
     <aside class="sheet left" role="dialog" aria-modal="true" aria-labelledby="sheet-profile-title">
-      <div class="sheet-head"><h2 id="sheet-profile-title">Profile</h2><button class="circle-btn" data-close aria-label="Close"></button></div>
+      <div class="sheet-head"><h2 id="sheet-profile-title" data-i18n="sheetProfile">Profile</h2><button class="circle-btn" data-close data-i18n-aria="close"></button></div>
       <div class="sheet-body"><div id="screen-profile"></div></div>
     </aside>
   </div>
@@ -489,7 +537,7 @@ button.day-main{cursor:pointer;}
   <div class="sheet-backdrop" data-close></div>
   <div class="sheet-frame">
     <aside class="sheet right" role="dialog" aria-modal="true" aria-labelledby="sheet-alerts-title">
-      <div class="sheet-head"><h2 id="sheet-alerts-title">Alerts &amp; suggestions</h2><button class="circle-btn" data-close aria-label="Close"></button></div>
+      <div class="sheet-head"><h2 id="sheet-alerts-title" data-i18n="sheetAlerts">Alerts &amp; suggestions</h2><button class="circle-btn" data-close data-i18n-aria="close"></button></div>
       <div class="sheet-body"><div id="screen-suggestions"></div></div>
     </aside>
   </div>
@@ -577,6 +625,732 @@ const ROLES = {
 const ROLE_ORDER = ["fitness","health","farmer","student","parent","worker","traveler","beach","commuter","event"];
 
 /* =======================================================================
+   LANGUAGES — English, Hindi, Marathi
+   t("key", {var}) returns the string in the current language,
+   falling back to English if a key is missing.
+======================================================================= */
+const LANGS = ["en","hi","mr"];
+const LOCALE = { en:"en-US", hi:"hi-IN-u-nu-latn", mr:"mr-IN-u-nu-latn" };
+let LANG = "en";
+
+const UI = {
+en:{
+  authTitle:"What should we call you?", authSub:"Enter your name to log in. Your interest, places and language stay saved on this phone.", namePh:"Your name", continueBtn:"Continue", errName:"Please enter your name.", localNote:"Nothing is uploaded — everything stays on this phone.", localSub:"Logged in on this phone", logOut:"Log out", confirmLogout:"Log out? Your name, interest and saved places will be removed from this phone.",
+  langLabel:"Language",
+  tagline:"Your Weather. Your World.",
+  splashCopy:"Personalized weather insights for a healthier, safer, and better-planned day — built around what you actually do outdoors.",
+  getStarted:"Get Started",
+  back:"Back",
+  obTitle:"Which areas are<br>you interested in?",
+  obSub:"Choose one — we'll tailor everything around it. You can change this anytime from Profile.",
+  locTitle:"Allow location access",
+  locSub:"We use your location to provide accurate, hyperlocal weather and personalized recommendations for you.",
+  allowLoc:"Allow Location Access",
+  or:"or",
+  manualLoc:"Enter Location Manually",
+  searchPh:"Search city or village",
+  locating:"Locating…",
+  locNoSupport:"Location services aren't available in this browser. Please enter your location manually.",
+  locSecure:"Location access needs a secure connection (https) or a local file opened directly in the browser.",
+  locDefault:"We couldn't get your location. Please enter it manually below.",
+  locIframe:"Location access is blocked inside this embedded preview. Download the file and open it directly in your browser, or enter your location manually.",
+  locDenied:"Location permission was denied. Check your browser's site settings, or enter your location manually.",
+  locUnavail:"Your device couldn't determine a location right now. Please try again or enter it manually.",
+  locTimeout:"Location request timed out. Please try again or enter it manually.",
+  envBanner:"You're viewing this inside an embedded preview, which usually blocks location access and can block live weather data. Download this file and open it directly in your browser for everything to work.",
+  searching:"Searching…",
+  searchFail:"Search couldn't reach the weather service. Check your connection and try again.",
+  searchFailIframe:"Search couldn't reach the weather service — this embedded preview may be blocking network access.",
+  noMatches:"No matches found. Try a different spelling.",
+  currentLocationName:"Current location", yourArea:"Your area", yourLocation:"Your location", locationWord:"Location",
+  greetMorning:"Good morning", greetAfternoon:"Good afternoon", greetEvening:"Good evening",
+  ariaProfile:"Profile and location", ariaRefresh:"Refresh weather",
+  ariaAlerts:"Alerts and suggestions", ariaAlertsN:"Alerts and suggestions, {n} alerts",
+  sheetProfile:"Profile", sheetAlerts:"Alerts & suggestions", close:"Close",
+  loadingSky:"Reading the sky over {place}…",
+  errLoadTitle:"Couldn't load the forecast",
+  errLoadMsg:"We had trouble reaching the weather service. Check your connection and try again.",
+  tryAgain:"Try again",
+  feels:"Feels like {t}° · H:{hi}° L:{lo}°",
+  humidity:"Humidity", wind:"Wind", visibility:"Visibility",
+  riskLevel:"Risk level", rating:"Rating",
+  scoreBasis:"based on rain, heat, air quality, UV and wind right now.",
+  bandLow:"Low", bandModerate:"Moderate", bandHigh:"High", bandSevere:"Severe", bandGood:"Good", bandFair:"Fair", bandPoor:"Poor",
+  next24:"Next 24 hours", airUv:"Air & UV", sevenDay:"7-day forecast", detailsForYou:"Details for you",
+  footHome:"Weather from Open-Meteo · Air quality from Open-Meteo Air Quality{sea}. For official severe weather warnings, always check IMD.",
+  footSea:" · Sea conditions from Open-Meteo Marine",
+  aqiTitle:"Air Quality Index", uvTitle:"UV Index",
+  gGood:"Good", gSevere:"Severe", gLow:"Low", gExtreme:"Extreme",
+  aqiNA:"Unavailable", aqiGood:"Good", aqiModerate:"Moderate", aqiUSG:"Unhealthy (Sensitive)", aqiUnhealthy:"Unhealthy", aqiVery:"Very Unhealthy", aqiHaz:"Hazardous",
+  uvLow:"Low", uvModerate:"Moderate", uvHigh:"High", uvVeryHigh:"Very High", uvExtreme:"Extreme",
+  rainNow:"<strong>Rain likely now</strong>, up to {p}% chance over the next 24 hours.",
+  rainFrom:"<strong>Rain likely from {h}</strong>, peaking at {p}% chance.",
+  noRain:"<strong>No significant rain expected</strong> in the next 24 hours.",
+  warmest:" Warmest around {h} at {t}°.",
+  now:"Now", today:"Today",
+  dayRange:"{desc}, {min}° to {max}°",
+  rainChance:"Rain chance", maxWind:"Max wind", maxUv:"Max UV", sunriseSunset:"Sunrise / sunset",
+  rain3:"Rain, next 3h", likely:"Likely", possible:"Possible", unlikely:"Unlikely",
+  sunrise:"Sunrise", sunset:"Sunset", daylight:"Daylight", maxWindToday:"Max wind today", gusty:"Gusty",
+  high:"High", elevated:"Elevated", low:"Low", pollen:"Pollen", notAvailRegion:"Not available in this region",
+  soilMoisture:"Soil moisture", notAvailHere:"Not available here", normal:"Normal",
+  frostRisk:"Frost risk", possibleV:"Possible", lowV:"Low", fogRisk:"Fog risk", present:"Present",
+  waveHeight:"Wave height", seaTemp:"Sea temp", wavePeriod:"Wave period",
+  dayLen:"{h}h {m}m",
+  alertsTitle:"Alerts", all:"All", noAlertsCat:"No alerts in this category.",
+  rightNow:"Right now", planDay:"Plan your day", bestDayWeek:"Best day this week", tipForYou:"Tip for you",
+  eventDateCheck:"Event date check", whatToCarry:"What to carry",
+  suggFoot:"Suggestions are generated from live readings for your selected interest. They're guidance, not an official warning.",
+  bestTimeWater:"Best time in the water", bestTimeField:"Best time for fieldwork", bestTimeTrain:"Best time to train", bestTimeOut:"Best time to be outdoors",
+  aroundSurf:"Around {h}, when waves are closest to a comfortable height.",
+  needsSea:"Needs sea data, which isn't available for this location.",
+  aroundActive:"Around {h}, balancing temperature, UV and rain chance.",
+  checkBackSurf:"Check back after refreshing",
+  bestDayText:"{day} looks best {purpose}, with a comfort rating of {v}/100.",
+  depRain:"Rain risk rises sharply around {h} — consider leaving before then.",
+  depNone:"No major rain-timing concerns for today's commute.",
+  depNoTiming:"No timing concerns identified today.",
+  trafficNote:" Live traffic isn't included; this is weather-based only.",
+  chipGood:"Good", chipCaution:"Caution", chipAvoid:"Avoid", irrigation:"Irrigation",
+  umbrella:"Umbrella", warmLayer:"Warm layer", waterBottle:"Water bottle", sunscreen:"Sunscreen", mask:"Mask", noItems:"No special items needed",
+  checkDate:"Check a date for your event", comfort:"Comfort", rainW:"Rain", windW:"Wind",
+  tipHealthAqi:"Prefer indoor activity today, especially for sensitive groups.",
+  tipHealthOk:"Safe to spend time outside. No significant respiratory risk right now.",
+  tipFitRain:"Plan an indoor session as a backup in case the rain arrives early.",
+  tipFitHot:"Keep sessions short and hydrate every 15 to 20 minutes.",
+  tipFitOk:"Conditions suit a normal outdoor session.",
+  tipFarmIrr:"Irrigation recommended today.",
+  tipFarmSkip:"Skip irrigation. Soil moisture is sufficient.",
+  tipFarmMon:"Monitor soil moisture. No urgent action needed.",
+  tipParentRain:"Plan the school pickup around the rain. The hourly forecast on Home shows when it eases.",
+  tipParentOk:"No major disruption expected for school drop-off or pickup today.",
+  tipStudentRain:"Leave about 10 minutes early and keep your bag waterproofed.",
+  tipStudentOk:"A normal commute is expected today.",
+  tipWorkerHot:"Schedule heavy tasks before 11 AM and take regular shade breaks.",
+  tipWorkerWind:"Hold off on height work while winds are strong.",
+  tipWorkerOk:"Conditions are workable for outdoor tasks.",
+  tipTravRain:"Lean on indoor sightseeing today and keep transfers flexible.",
+  tipTravOk:"A good day for outdoor sightseeing.",
+  tipBeachMarine:"Tide-extreme timings aren't available from this data source.",
+  tipBeachNo:"This location doesn't look coastal, or sea data isn't available. Search a coastal location to get wave details.",
+  tipEventRain:"Confirm your covered or indoor backup before guests arrive.",
+  tipEventOk:"Outdoor setup looks workable for today.",
+  yourInterest:"Your interest", changeInterest:"Change interest", locationTitle:"Location",
+  current:"Current", tapSwitch:"Tap to switch", addLocation:"Add a location", useCurrentLoc:"Use my current location",
+  noSaved:"No saved locations yet.", about:"About", weatherData:"Weather data", aqData:"Air quality data", marineData:"Marine data",
+  profileFoot:"Mausam — Smart Weather. Personalized for you. A healthier, safer tomorrow.",
+  account:"Account",
+},
+
+hi:{
+  authTitle:"आपको क्या बुलाएं?", authSub:"लॉग इन करने के लिए अपना नाम डालें। आपकी रुचि, जगहें और भाषा इसी फ़ोन पर सेव रहेंगी।", namePh:"आपका नाम", continueBtn:"आगे बढ़ें", errName:"कृपया अपना नाम डालें।", localNote:"कुछ भी अपलोड नहीं होता — सब कुछ इसी फ़ोन पर रहता है।", localSub:"इस फ़ोन पर लॉग इन", logOut:"लॉग आउट", confirmLogout:"लॉग आउट करें? आपका नाम, रुचि और सेव की गई जगहें इस फ़ोन से हट जाएंगी।",
+  langLabel:"भाषा",
+  tagline:"आपका मौसम। आपकी दुनिया।",
+  splashCopy:"आपके बाहर के कामों के हिसाब से मौसम की जानकारी — ताकि आपका दिन सेहतमंद, सुरक्षित और बेहतर प्लान हो।",
+  getStarted:"शुरू करें",
+  back:"वापस",
+  obTitle:"आपकी रुचि<br>किसमें है?",
+  obSub:"एक चुनें — सब कुछ उसी के हिसाब से दिखेगा। इसे आप कभी भी प्रोफ़ाइल से बदल सकते हैं।",
+  locTitle:"लोकेशन की अनुमति दें",
+  locSub:"आपके इलाके का सटीक मौसम और आपके लिए सुझाव देने के लिए हम आपकी लोकेशन इस्तेमाल करते हैं।",
+  allowLoc:"लोकेशन की अनुमति दें",
+  or:"या",
+  manualLoc:"लोकेशन खुद डालें",
+  searchPh:"शहर या गांव खोजें",
+  locating:"लोकेशन ढूंढ रहे हैं…",
+  locNoSupport:"इस ब्राउज़र में लोकेशन सेवा उपलब्ध नहीं है। कृपया लोकेशन खुद डालें।",
+  locSecure:"लोकेशन के लिए सुरक्षित कनेक्शन (https) चाहिए।",
+  locDefault:"आपकी लोकेशन नहीं मिल पाई। कृपया नीचे खुद डालें।",
+  locIframe:"इस प्रीव्यू में लोकेशन ब्लॉक है। फ़ाइल को सीधे ब्राउज़र में खोलें या लोकेशन खुद डालें।",
+  locDenied:"लोकेशन की अनुमति नहीं मिली। ब्राउज़र की साइट सेटिंग्स देखें या लोकेशन खुद डालें।",
+  locUnavail:"आपका डिवाइस अभी लोकेशन नहीं ढूंढ पाया। दोबारा कोशिश करें या खुद डालें।",
+  locTimeout:"लोकेशन मिलने में बहुत समय लग गया। दोबारा कोशिश करें या खुद डालें।",
+  searching:"खोज रहे हैं…",
+  searchFail:"खोज नहीं हो पाई। इंटरनेट जांचकर दोबारा कोशिश करें।",
+  noMatches:"कुछ नहीं मिला। अलग स्पेलिंग आज़माएं।",
+  currentLocationName:"मौजूदा लोकेशन", yourArea:"आपका इलाका", yourLocation:"आपकी लोकेशन", locationWord:"लोकेशन",
+  greetMorning:"सुप्रभात", greetAfternoon:"शुभ दोपहर", greetEvening:"शुभ संध्या",
+  ariaProfile:"प्रोफ़ाइल और लोकेशन", ariaRefresh:"मौसम रीफ़्रेश करें",
+  ariaAlerts:"अलर्ट और सुझाव", ariaAlertsN:"अलर्ट और सुझाव, {n} अलर्ट",
+  sheetProfile:"प्रोफ़ाइल", sheetAlerts:"अलर्ट और सुझाव", close:"बंद करें",
+  loadingSky:"{place} का मौसम देख रहे हैं…",
+  errLoadTitle:"मौसम की जानकारी लोड नहीं हो पाई",
+  errLoadMsg:"मौसम सेवा से जुड़ नहीं पाए। इंटरनेट जांचकर दोबारा कोशिश करें।",
+  tryAgain:"दोबारा कोशिश करें",
+  feels:"महसूस {t}° · अधिकतम {hi}° · न्यूनतम {lo}°",
+  humidity:"नमी", wind:"हवा", visibility:"दृश्यता",
+  riskLevel:"जोखिम स्तर", rating:"रेटिंग",
+  scoreBasis:"अभी की बारिश, गर्मी, हवा की गुणवत्ता, UV और हवा के आधार पर।",
+  bandLow:"कम", bandModerate:"मध्यम", bandHigh:"ज़्यादा", bandSevere:"गंभीर", bandGood:"अच्छा", bandFair:"ठीक-ठाक", bandPoor:"खराब",
+  next24:"अगले 24 घंटे", airUv:"हवा और UV", sevenDay:"7 दिन का पूर्वानुमान", detailsForYou:"आपके लिए जानकारी",
+  footHome:"मौसम: Open-Meteo · हवा की गुणवत्ता: Open-Meteo Air Quality{sea}। आधिकारिक गंभीर मौसम चेतावनी के लिए हमेशा IMD देखें।",
+  footSea:" · समुद्र: Open-Meteo Marine",
+  aqiTitle:"वायु गुणवत्ता सूचकांक", uvTitle:"UV सूचकांक",
+  gGood:"अच्छा", gSevere:"गंभीर", gLow:"कम", gExtreme:"अत्यधिक",
+  aqiNA:"उपलब्ध नहीं", aqiGood:"अच्छी", aqiModerate:"मध्यम", aqiUSG:"संवेदनशील के लिए खराब", aqiUnhealthy:"हानिकारक", aqiVery:"बहुत हानिकारक", aqiHaz:"खतरनाक",
+  uvLow:"कम", uvModerate:"मध्यम", uvHigh:"ज़्यादा", uvVeryHigh:"बहुत ज़्यादा", uvExtreme:"अत्यधिक",
+  rainNow:"<strong>अभी बारिश की संभावना</strong>, अगले 24 घंटों में {p}% तक।",
+  rainFrom:"<strong>{h} से बारिश की संभावना</strong>, सबसे ज़्यादा {p}%।",
+  noRain:"<strong>अगले 24 घंटों में खास बारिश की उम्मीद नहीं</strong>।",
+  warmest:" सबसे ज़्यादा गर्मी {h} के आसपास, {t}°।",
+  now:"अभी", today:"आज",
+  dayRange:"{desc}, {min}° से {max}°",
+  rainChance:"बारिश की संभावना", maxWind:"अधिकतम हवा", maxUv:"अधिकतम UV", sunriseSunset:"सूर्योदय / सूर्यास्त",
+  rain3:"बारिश, अगले 3 घंटे", likely:"संभावित", possible:"हो सकती है", unlikely:"कम संभावना",
+  sunrise:"सूर्योदय", sunset:"सूर्यास्त", daylight:"दिन की रोशनी", maxWindToday:"आज अधिकतम हवा", gusty:"तेज़ झोंके",
+  high:"ज़्यादा", elevated:"बढ़ा हुआ", low:"कम", pollen:"पराग", notAvailRegion:"इस इलाके में उपलब्ध नहीं",
+  soilMoisture:"मिट्टी की नमी", notAvailHere:"यहां उपलब्ध नहीं", normal:"सामान्य",
+  frostRisk:"पाले का खतरा", possibleV:"संभव", lowV:"कम", fogRisk:"कोहरे का खतरा", present:"मौजूद",
+  waveHeight:"लहरों की ऊंचाई", seaTemp:"समुद्र का तापमान", wavePeriod:"लहर अंतराल",
+  dayLen:"{h} घं {m} मि",
+  alertsTitle:"अलर्ट", all:"सभी", noAlertsCat:"इस श्रेणी में कोई अलर्ट नहीं।",
+  rightNow:"अभी", planDay:"दिन की योजना", bestDayWeek:"इस हफ़्ते का सबसे अच्छा दिन", tipForYou:"आपके लिए सुझाव",
+  eventDateCheck:"इवेंट की तारीख जांचें", whatToCarry:"साथ क्या रखें",
+  suggFoot:"ये सुझाव आपकी चुनी हुई रुचि के लिए लाइव मौसम से बनते हैं। ये मार्गदर्शन हैं, आधिकारिक चेतावनी नहीं।",
+  bestTimeWater:"पानी में जाने का सबसे अच्छा समय", bestTimeField:"खेत के काम का सबसे अच्छा समय", bestTimeTrain:"व्यायाम का सबसे अच्छा समय", bestTimeOut:"बाहर जाने का सबसे अच्छा समय",
+  aroundSurf:"लगभग {h}, जब लहरें आरामदायक ऊंचाई के सबसे करीब होंगी।",
+  needsSea:"इसके लिए समुद्र का डेटा चाहिए, जो इस जगह के लिए उपलब्ध नहीं है।",
+  aroundActive:"लगभग {h}, तापमान, UV और बारिश की संभावना को देखते हुए।",
+  checkBackSurf:"रीफ़्रेश करके फिर देखें",
+  bestDayText:"{purpose} {day} सबसे अच्छा दिखता है, आराम रेटिंग {v}/100।",
+  depRain:"{h} के आसपास बारिश का खतरा तेज़ी से बढ़ता है — उससे पहले निकलना बेहतर है।",
+  depNone:"आज के सफ़र में बारिश के समय को लेकर कोई बड़ी चिंता नहीं।",
+  depNoTiming:"आज समय को लेकर कोई चिंता नहीं।",
+  trafficNote:" लाइव ट्रैफ़िक शामिल नहीं है; यह सिर्फ़ मौसम पर आधारित है।",
+  chipGood:"ठीक", chipCaution:"सावधानी", chipAvoid:"टालें", irrigation:"सिंचाई",
+  umbrella:"छाता", warmLayer:"गरम कपड़े", waterBottle:"पानी की बोतल", sunscreen:"सनस्क्रीन", mask:"मास्क", noItems:"कुछ खास ज़रूरत नहीं",
+  checkDate:"अपने इवेंट के लिए तारीख जांचें", comfort:"आराम", rainW:"बारिश", windW:"हवा",
+  tipHealthAqi:"आज घर के अंदर रहना बेहतर है, खासकर संवेदनशील लोगों के लिए।",
+  tipHealthOk:"बाहर समय बिताना सुरक्षित है। अभी सांस से जुड़ा कोई खास खतरा नहीं।",
+  tipFitRain:"बारिश जल्दी आ जाए तो इसके लिए इनडोर व्यायाम का बैकअप रखें।",
+  tipFitHot:"व्यायाम छोटा रखें और हर 15-20 मिनट में पानी पिएं।",
+  tipFitOk:"मौसम सामान्य आउटडोर व्यायाम के लिए ठीक है।",
+  tipFarmIrr:"आज सिंचाई करना ठीक रहेगा।",
+  tipFarmSkip:"सिंचाई न करें। मिट्टी में पर्याप्त नमी है।",
+  tipFarmMon:"मिट्टी की नमी पर नज़र रखें। अभी कुछ ज़रूरी नहीं।",
+  tipParentRain:"बारिश को देखते हुए बच्चों को स्कूल से लाने की योजना बनाएं। होम पर घंटेवार पूर्वानुमान में दिखेगा कि बारिश कब थमेगी।",
+  tipParentOk:"आज स्कूल छोड़ने या लाने में कोई बड़ी दिक्कत की उम्मीद नहीं।",
+  tipStudentRain:"करीब 10 मिनट पहले निकलें और बैग को पानी से बचाकर रखें।",
+  tipStudentOk:"आज सफ़र सामान्य रहने की उम्मीद है।",
+  tipWorkerHot:"भारी काम सुबह 11 बजे से पहले करें और बीच-बीच में छांव में आराम करें।",
+  tipWorkerWind:"तेज़ हवा के दौरान ऊंचाई पर काम न करें।",
+  tipWorkerOk:"बाहर के काम के लिए मौसम ठीक है।",
+  tipTravRain:"आज इनडोर जगहें घूमें और सफ़र की योजना लचीली रखें।",
+  tipTravOk:"बाहर घूमने के लिए अच्छा दिन है।",
+  tipBeachMarine:"ज्वार-भाटे का समय इस डेटा स्रोत में उपलब्ध नहीं है।",
+  tipBeachNo:"यह जगह तटीय नहीं लगती या समुद्र का डेटा उपलब्ध नहीं है। लहरों की जानकारी के लिए कोई तटीय जगह खोजें।",
+  tipEventRain:"मेहमानों के आने से पहले ढकी हुई या इनडोर जगह पक्की कर लें।",
+  tipEventOk:"आज आउटडोर इंतज़ाम ठीक रहेगा।",
+  yourInterest:"आपकी रुचि", changeInterest:"रुचि बदलें", locationTitle:"लोकेशन",
+  current:"मौजूदा", tapSwitch:"बदलने के लिए टैप करें", addLocation:"लोकेशन जोड़ें", useCurrentLoc:"मेरी मौजूदा लोकेशन इस्तेमाल करें",
+  noSaved:"अभी कोई सेव लोकेशन नहीं।", about:"जानकारी", weatherData:"मौसम डेटा", aqData:"हवा गुणवत्ता डेटा", marineData:"समुद्री डेटा",
+  profileFoot:"मौसम — स्मार्ट मौसम, आपके लिए। एक सेहतमंद, सुरक्षित कल।",
+  account:"अकाउंट",
+},
+
+mr:{
+  authTitle:"तुम्हाला काय म्हणायचं?", authSub:"लॉग इन करण्यासाठी तुमचं नाव टाका. तुमची आवड, ठिकाणं आणि भाषा याच फोनवर सेव्ह राहतील.", namePh:"तुमचं नाव", continueBtn:"पुढे चला", errName:"कृपया तुमचं नाव टाका.", localNote:"काहीही अपलोड होत नाही — सगळं याच फोनवर राहतं.", localSub:"या फोनवर लॉग इन", logOut:"लॉग आउट", confirmLogout:"लॉग आउट करायचं? तुमचं नाव, आवड आणि सेव्ह केलेली ठिकाणं या फोनवरून काढली जातील.",
+  langLabel:"भाषा",
+  tagline:"तुमचं हवामान. तुमचं जग.",
+  splashCopy:"तुम्ही बाहेर जे करता त्यानुसार हवामानाची माहिती — म्हणजे तुमचा दिवस निरोगी, सुरक्षित आणि नीट नियोजित होईल.",
+  getStarted:"सुरू करा",
+  back:"मागे",
+  obTitle:"तुम्हाला कशात<br>रस आहे?",
+  obSub:"एक निवडा — सगळं त्यानुसार दाखवलं जाईल. हे तुम्ही कधीही प्रोफाइलमधून बदलू शकता.",
+  locTitle:"लोकेशनची परवानगी द्या",
+  locSub:"तुमच्या भागाचं अचूक हवामान आणि तुमच्यासाठी सूचना देण्यासाठी आम्ही तुमचं लोकेशन वापरतो.",
+  allowLoc:"लोकेशनची परवानगी द्या",
+  or:"किंवा",
+  manualLoc:"लोकेशन स्वतः टाका",
+  searchPh:"शहर किंवा गाव शोधा",
+  locating:"लोकेशन शोधत आहोत…",
+  locNoSupport:"या ब्राउझरमध्ये लोकेशन सेवा उपलब्ध नाही. कृपया लोकेशन स्वतः टाका.",
+  locSecure:"लोकेशनसाठी सुरक्षित कनेक्शन (https) लागतं.",
+  locDefault:"तुमचं लोकेशन मिळालं नाही. कृपया खाली स्वतः टाका.",
+  locIframe:"या प्रिव्ह्यूमध्ये लोकेशन ब्लॉक आहे. फाइल थेट ब्राउझरमध्ये उघडा किंवा लोकेशन स्वतः टाका.",
+  locDenied:"लोकेशनची परवानगी नाकारली गेली. ब्राउझरची साइट सेटिंग्ज तपासा किंवा लोकेशन स्वतः टाका.",
+  locUnavail:"तुमच्या डिव्हाइसला आत्ता लोकेशन सापडलं नाही. पुन्हा प्रयत्न करा किंवा स्वतः टाका.",
+  locTimeout:"लोकेशन मिळायला खूप वेळ लागला. पुन्हा प्रयत्न करा किंवा स्वतः टाका.",
+  searching:"शोधत आहोत…",
+  searchFail:"शोध झाला नाही. इंटरनेट तपासून पुन्हा प्रयत्न करा.",
+  noMatches:"काहीही सापडलं नाही. वेगळं स्पेलिंग वापरून पहा.",
+  currentLocationName:"सध्याचं लोकेशन", yourArea:"तुमचा भाग", yourLocation:"तुमचं लोकेशन", locationWord:"लोकेशन",
+  greetMorning:"सुप्रभात", greetAfternoon:"शुभ दुपार", greetEvening:"शुभ संध्याकाळ",
+  ariaProfile:"प्रोफाइल आणि लोकेशन", ariaRefresh:"हवामान रिफ्रेश करा",
+  ariaAlerts:"अलर्ट आणि सूचना", ariaAlertsN:"अलर्ट आणि सूचना, {n} अलर्ट",
+  sheetProfile:"प्रोफाइल", sheetAlerts:"अलर्ट आणि सूचना", close:"बंद करा",
+  loadingSky:"{place} चं हवामान पाहत आहोत…",
+  errLoadTitle:"हवामानाची माहिती लोड झाली नाही",
+  errLoadMsg:"हवामान सेवेशी जोडता आलं नाही. इंटरनेट तपासून पुन्हा प्रयत्न करा.",
+  tryAgain:"पुन्हा प्रयत्न करा",
+  feels:"जाणवतं {t}° · कमाल {hi}° · किमान {lo}°",
+  humidity:"आर्द्रता", wind:"वारा", visibility:"दृश्यमानता",
+  riskLevel:"धोका पातळी", rating:"रेटिंग",
+  scoreBasis:"आत्ताचा पाऊस, उष्णता, हवेची गुणवत्ता, UV आणि वारा यांवर आधारित.",
+  bandLow:"कमी", bandModerate:"मध्यम", bandHigh:"जास्त", bandSevere:"गंभीर", bandGood:"चांगलं", bandFair:"ठीक", bandPoor:"खराब",
+  next24:"पुढचे 24 तास", airUv:"हवा आणि UV", sevenDay:"7 दिवसांचा अंदाज", detailsForYou:"तुमच्यासाठी माहिती",
+  footHome:"हवामान: Open-Meteo · हवेची गुणवत्ता: Open-Meteo Air Quality{sea}. अधिकृत गंभीर हवामान इशाऱ्यांसाठी नेहमी IMD पहा.",
+  footSea:" · समुद्र: Open-Meteo Marine",
+  aqiTitle:"हवा गुणवत्ता निर्देशांक", uvTitle:"UV निर्देशांक",
+  gGood:"चांगली", gSevere:"गंभीर", gLow:"कमी", gExtreme:"अतितीव्र",
+  aqiNA:"उपलब्ध नाही", aqiGood:"चांगली", aqiModerate:"मध्यम", aqiUSG:"संवेदनशीलांसाठी खराब", aqiUnhealthy:"अपायकारक", aqiVery:"अतिशय अपायकारक", aqiHaz:"धोकादायक",
+  uvLow:"कमी", uvModerate:"मध्यम", uvHigh:"जास्त", uvVeryHigh:"खूप जास्त", uvExtreme:"अतितीव्र",
+  rainNow:"<strong>आत्ता पावसाची शक्यता</strong>, पुढच्या 24 तासांत {p}% पर्यंत.",
+  rainFrom:"<strong>{h} पासून पावसाची शक्यता</strong>, सर्वाधिक {p}%.",
+  noRain:"<strong>पुढच्या 24 तासांत फारसा पाऊस अपेक्षित नाही</strong>.",
+  warmest:" सर्वात जास्त उष्णता {h} च्या सुमारास, {t}°.",
+  now:"आत्ता", today:"आज",
+  dayRange:"{desc}, {min}° ते {max}°",
+  rainChance:"पावसाची शक्यता", maxWind:"कमाल वारा", maxUv:"कमाल UV", sunriseSunset:"सूर्योदय / सूर्यास्त",
+  rain3:"पाऊस, पुढचे 3 तास", likely:"शक्यता जास्त", possible:"शक्य", unlikely:"शक्यता कमी",
+  sunrise:"सूर्योदय", sunset:"सूर्यास्त", daylight:"दिवसाचा प्रकाश", maxWindToday:"आज कमाल वारा", gusty:"जोरदार झोत",
+  high:"जास्त", elevated:"वाढलेलं", low:"कमी", pollen:"परागकण", notAvailRegion:"या भागात उपलब्ध नाही",
+  soilMoisture:"मातीतील ओलावा", notAvailHere:"इथे उपलब्ध नाही", normal:"सामान्य",
+  frostRisk:"दंवाचा धोका", possibleV:"शक्य", lowV:"कमी", fogRisk:"धुक्याचा धोका", present:"आहे",
+  waveHeight:"लाटांची उंची", seaTemp:"समुद्राचं तापमान", wavePeriod:"लाटांचा कालावधी",
+  dayLen:"{h} ता {m} मि",
+  alertsTitle:"अलर्ट", all:"सर्व", noAlertsCat:"या प्रकारात कोणताही अलर्ट नाही.",
+  rightNow:"आत्ता", planDay:"दिवसाचं नियोजन", bestDayWeek:"या आठवड्यातील सर्वोत्तम दिवस", tipForYou:"तुमच्यासाठी टिप",
+  eventDateCheck:"कार्यक्रमाची तारीख तपासा", whatToCarry:"सोबत काय घ्यावं",
+  suggFoot:"या सूचना तुम्ही निवडलेल्या आवडीसाठी थेट हवामानावरून तयार होतात. हे मार्गदर्शन आहे, अधिकृत इशारा नाही.",
+  bestTimeWater:"पाण्यात जाण्याची सर्वोत्तम वेळ", bestTimeField:"शेतीकामासाठी सर्वोत्तम वेळ", bestTimeTrain:"व्यायामासाठी सर्वोत्तम वेळ", bestTimeOut:"बाहेर जाण्याची सर्वोत्तम वेळ",
+  aroundSurf:"साधारण {h}, जेव्हा लाटा आरामदायक उंचीच्या सर्वात जवळ असतील.",
+  needsSea:"यासाठी समुद्राचा डेटा लागतो, जो या ठिकाणासाठी उपलब्ध नाही.",
+  aroundActive:"साधारण {h}, तापमान, UV आणि पावसाची शक्यता लक्षात घेऊन.",
+  checkBackSurf:"रिफ्रेश करून पुन्हा पहा",
+  bestDayText:"{purpose} {day} सर्वोत्तम दिसतो, आराम रेटिंग {v}/100.",
+  depRain:"{h} च्या सुमारास पावसाचा धोका झपाट्याने वाढतो — त्याआधी निघणं चांगलं.",
+  depNone:"आजच्या प्रवासात पावसाच्या वेळेची फारशी काळजी नाही.",
+  depNoTiming:"आज वेळेबाबत काही काळजी नाही.",
+  trafficNote:" लाइव्ह ट्रॅफिक यात नाही; हे फक्त हवामानावर आधारित आहे.",
+  chipGood:"योग्य", chipCaution:"सावधगिरी", chipAvoid:"टाळा", irrigation:"सिंचन",
+  umbrella:"छत्री", warmLayer:"उबदार कपडे", waterBottle:"पाण्याची बाटली", sunscreen:"सनस्क्रीन", mask:"मास्क", noItems:"विशेष काही लागणार नाही",
+  checkDate:"तुमच्या कार्यक्रमासाठी तारीख तपासा", comfort:"आराम", rainW:"पाऊस", windW:"वारा",
+  tipHealthAqi:"आज घरात राहणं चांगलं, विशेषतः संवेदनशील लोकांसाठी.",
+  tipHealthOk:"बाहेर वेळ घालवणं सुरक्षित आहे. आत्ता श्वसनाचा फारसा धोका नाही.",
+  tipFitRain:"पाऊस लवकर आला तर घरातील व्यायामाचा पर्याय तयार ठेवा.",
+  tipFitHot:"व्यायाम थोडक्यात करा आणि दर 15-20 मिनिटांनी पाणी प्या.",
+  tipFitOk:"नेहमीच्या बाहेरच्या व्यायामासाठी हवामान योग्य आहे.",
+  tipFarmIrr:"आज पाणी देणं योग्य राहील.",
+  tipFarmSkip:"पाणी देऊ नका. मातीत पुरेसा ओलावा आहे.",
+  tipFarmMon:"मातीतील ओलाव्यावर लक्ष ठेवा. आत्ता तातडीचं काही नाही.",
+  tipParentRain:"पावसाचा विचार करून शाळेतून मुलांना आणण्याचं नियोजन करा. पाऊस कधी कमी होईल ते होमवरच्या तासागणिक अंदाजात दिसेल.",
+  tipParentOk:"आज शाळेत सोडताना किंवा आणताना फारसा अडथळा अपेक्षित नाही.",
+  tipStudentRain:"साधारण 10 मिनिटं आधी निघा आणि बॅग पाण्यापासून सुरक्षित ठेवा.",
+  tipStudentOk:"आज प्रवास नेहमीसारखा राहील.",
+  tipWorkerHot:"जड कामं सकाळी 11 पूर्वी करा आणि मधूनमधून सावलीत विश्रांती घ्या.",
+  tipWorkerWind:"जोरदार वारा असताना उंचीवरचं काम टाळा.",
+  tipWorkerOk:"बाहेरच्या कामासाठी हवामान ठीक आहे.",
+  tipTravRain:"आज इनडोअर ठिकाणं पाहा आणि प्रवासाचं नियोजन लवचिक ठेवा.",
+  tipTravOk:"बाहेर फिरण्यासाठी चांगला दिवस आहे.",
+  tipBeachMarine:"भरती-ओहोटीच्या वेळा या डेटा स्रोतात उपलब्ध नाहीत.",
+  tipBeachNo:"हे ठिकाण किनारपट्टीवर दिसत नाही किंवा समुद्राचा डेटा उपलब्ध नाही. लाटांच्या माहितीसाठी किनारपट्टीवरचं ठिकाण शोधा.",
+  tipEventRain:"पाहुणे येण्याआधी छत असलेली किंवा इनडोअर जागा निश्चित करा.",
+  tipEventOk:"आज बाहेरची व्यवस्था ठीक राहील.",
+  yourInterest:"तुमची आवड", changeInterest:"आवड बदला", locationTitle:"लोकेशन",
+  current:"सध्याचं", tapSwitch:"बदलण्यासाठी टॅप करा", addLocation:"लोकेशन जोडा", useCurrentLoc:"माझं सध्याचं लोकेशन वापरा",
+  noSaved:"अजून कोणतंही सेव्ह केलेलं लोकेशन नाही.", about:"माहिती", weatherData:"हवामान डेटा", aqData:"हवा गुणवत्ता डेटा", marineData:"सागरी डेटा",
+  profileFoot:"मौसम — स्मार्ट हवामान, तुमच्यासाठी. एक निरोगी, सुरक्षित उद्या.",
+  account:"अकाउंट",
+}
+};
+
+function t(key, vars){
+  let s = (UI[LANG] && UI[LANG][key] != null) ? UI[LANG][key] : (UI.en[key] != null ? UI.en[key] : key);
+  if(vars) Object.keys(vars).forEach(k => { s = s.split("{" + k + "}").join(vars[k]); });
+  return s;
+}
+
+/* Roles: [label, short, description] */
+const ROLE_TR = {
+  en:{
+    fitness:["Fitness & Sports","Fitness","Runs, rides & training"],
+    health:["Health","Health","Air quality & wellbeing"],
+    farmer:["Farmer & Agriculture","Farmer","Soil, rain & crop planning"],
+    student:["Student","Student","Commute & campus days"],
+    parent:["Parent / Family","Parent","School runs & family days"],
+    worker:["Worker (Outdoor)","Worker","Outdoor & site work"],
+    traveler:["Traveler","Traveler","Trips & destinations"],
+    beach:["Beach / Surfer","Beach","Waves, tides & sun"],
+    commuter:["Commuter","Commuter","Drive, ride & transit"],
+    event:["Event Planner","Events","Outdoor events & dates"]
+  },
+  hi:{
+    fitness:["फ़िटनेस और खेल","फ़िटनेस","दौड़, साइकलिंग और ट्रेनिंग"],
+    health:["स्वास्थ्य","स्वास्थ्य","हवा की गुणवत्ता और सेहत"],
+    farmer:["किसान और खेती","किसान","मिट्टी, बारिश और फ़सल योजना"],
+    student:["छात्र","छात्र","सफ़र और कॉलेज के दिन"],
+    parent:["माता-पिता / परिवार","माता-पिता","स्कूल आना-जाना और परिवार"],
+    worker:["कामगार (बाहरी काम)","कामगार","बाहर और साइट का काम"],
+    traveler:["यात्री","यात्री","यात्राएं और घूमने की जगहें"],
+    beach:["बीच / सर्फ़र","बीच","लहरें, ज्वार और धूप"],
+    commuter:["रोज़ाना सफ़र","सफ़र","गाड़ी, बाइक और ट्रांज़िट"],
+    event:["इवेंट प्लानर","इवेंट","आउटडोर इवेंट और तारीखें"]
+  },
+  mr:{
+    fitness:["फिटनेस आणि खेळ","फिटनेस","धावणं, सायकलिंग आणि सराव"],
+    health:["आरोग्य","आरोग्य","हवेची गुणवत्ता आणि आरोग्य"],
+    farmer:["शेतकरी आणि शेती","शेतकरी","माती, पाऊस आणि पीक नियोजन"],
+    student:["विद्यार्थी","विद्यार्थी","प्रवास आणि कॉलेजचे दिवस"],
+    parent:["पालक / कुटुंब","पालक","शाळेचा प्रवास आणि कुटुंब"],
+    worker:["कामगार (बाहेरचं काम)","कामगार","बाहेरचं आणि साइटवरचं काम"],
+    traveler:["प्रवासी","प्रवासी","सहली आणि पर्यटनस्थळं"],
+    beach:["समुद्रकिनारा / सर्फर","किनारा","लाटा, भरती आणि ऊन"],
+    commuter:["रोजचा प्रवास","प्रवास","गाडी, दुचाकी आणि सार्वजनिक वाहतूक"],
+    event:["कार्यक्रम नियोजक","कार्यक्रम","बाहेरचे कार्यक्रम आणि तारखा"]
+  }
+};
+function roleTr(key, i){ const set = ROLE_TR[LANG] || ROLE_TR.en; return (set[key] || ROLE_TR.en[key])[i]; }
+function roleLabel(key){ return roleTr(key, 0); }
+function roleShort(key){ return roleTr(key, 1); }
+function roleDesc(key){ return roleTr(key, 2); }
+
+const SCORE_LABEL_TR = {
+  hi:{ fitness:"आउटडोर स्कोर", health:"स्वास्थ्य जोखिम", farmer:"खेत की स्थिति", student:"कैंपस डे स्कोर", parent:"परिवार जोखिम", worker:"बाहरी काम जोखिम", traveler:"यात्रा आराम स्कोर", beach:"सर्फ़ और तैराकी स्कोर", commuter:"सफ़र जोखिम", event:"इवेंट मौसम स्कोर" },
+  mr:{ fitness:"आउटडोअर स्कोर", health:"आरोग्य धोका", farmer:"शेताची स्थिती", student:"कॉलेज दिवस स्कोर", parent:"कुटुंब धोका", worker:"बाहेरच्या कामाचा धोका", traveler:"प्रवास आराम स्कोर", beach:"सर्फ आणि पोहणे स्कोर", commuter:"प्रवास धोका", event:"कार्यक्रम हवामान स्कोर" }
+};
+
+const CHIPS_TR = {
+  hi:{ fitness:["दौड़","साइकलिंग","आउटडोर खेल"], health:["बाहर समय","बाहर व्यायाम","संवेदनशील लोग"], farmer:["खेत का काम","छिड़काव","कटाई"], student:["सफ़र","आउटडोर PE","कैंपस इवेंट"], parent:["स्कूल आना-जाना","बाहर खेलना","वीकेंड प्लान"], worker:["बाहरी मेहनत","ऊंचाई पर काम","भारी मशीनें"], traveler:["घूमना","आउटडोर प्लान","फ़ोटोग्राफ़ी"], beach:["तैराकी","सर्फ़िंग","धूप सेंकना"], commuter:["गाड़ी चलाना","दोपहिया","पैदल/ट्रांज़िट"], event:["आउटडोर जगह","फ़ोटोग्राफ़ी","मेहमानों का आराम"] },
+  mr:{ fitness:["धावणं","सायकलिंग","मैदानी खेळ"], health:["बाहेर वेळ","बाहेर व्यायाम","संवेदनशील लोक"], farmer:["शेतीकाम","फवारणी","कापणी"], student:["प्रवास","मैदानी PE","कॉलेज कार्यक्रम"], parent:["शाळेचा प्रवास","बाहेर खेळणं","वीकेंड प्लॅन"], worker:["बाहेरचं श्रमकाम","उंचीवरचं काम","जड यंत्रं"], traveler:["पर्यटन","बाहेरचे प्लॅन","फोटोग्राफी"], beach:["पोहणं","सर्फिंग","ऊन खाणं"], commuter:["गाडी चालवणं","दुचाकी","चालणं/वाहतूक"], event:["बाहेरची जागा","फोटोग्राफी","पाहुण्यांचा आराम"] }
+};
+
+/* Weather descriptions, keyed by the English text */
+const WX_TR = {
+  hi:{ "Clear sky":"साफ़ आसमान", "Mostly clear":"ज़्यादातर साफ़", "Partly cloudy":"आंशिक बादल", "Overcast":"घने बादल", "Fog":"कोहरा", "Icy fog":"बर्फ़ीला कोहरा",
+    "Light drizzle":"हल्की बूंदाबांदी", "Drizzle":"बूंदाबांदी", "Dense drizzle":"तेज़ बूंदाबांदी", "Freezing drizzle":"जमा देने वाली बूंदाबांदी",
+    "Light rain":"हल्की बारिश", "Rain":"बारिश", "Heavy rain":"भारी बारिश", "Freezing rain":"जमा देने वाली बारिश",
+    "Light snow":"हल्की बर्फ़बारी", "Snow":"बर्फ़बारी", "Heavy snow":"भारी बर्फ़बारी", "Snow grains":"बर्फ़ के दाने",
+    "Rain showers":"बौछारें", "Violent showers":"तेज़ बौछारें", "Snow showers":"बर्फ़ की बौछारें",
+    "Thunderstorm":"आंधी-तूफ़ान", "Thunderstorm, hail":"आंधी-तूफ़ान, ओले", "Unsettled":"अस्थिर मौसम" },
+  mr:{ "Clear sky":"निरभ्र आकाश", "Mostly clear":"बहुतांश निरभ्र", "Partly cloudy":"अंशतः ढगाळ", "Overcast":"पूर्ण ढगाळ", "Fog":"धुकं", "Icy fog":"बर्फाळ धुकं",
+    "Light drizzle":"हलकी रिमझिम", "Drizzle":"रिमझिम", "Dense drizzle":"दाट रिमझिम", "Freezing drizzle":"गोठवणारी रिमझिम",
+    "Light rain":"हलका पाऊस", "Rain":"पाऊस", "Heavy rain":"मुसळधार पाऊस", "Freezing rain":"गोठवणारा पाऊस",
+    "Light snow":"हलकी बर्फवृष्टी", "Snow":"बर्फवृष्टी", "Heavy snow":"जोरदार बर्फवृष्टी", "Snow grains":"बर्फाचे कण",
+    "Rain showers":"पावसाच्या सरी", "Violent showers":"जोरदार सरी", "Snow showers":"बर्फाच्या सरी",
+    "Thunderstorm":"मेघगर्जनेसह वादळ", "Thunderstorm, hail":"वादळ, गारपीट", "Unsettled":"अस्थिर हवामान" }
+};
+
+/* Alert category tags, keyed by the English tag */
+const TAG_TR = {
+  hi:{ "Storm":"तूफ़ान", "Rain":"बारिश", "Heat":"गर्मी", "Cold":"ठंड", "Air quality":"हवा की गुणवत्ता", "UV":"UV", "Wind":"हवा", "Soil":"मिट्टी", "All clear":"सब ठीक", "Sea":"समुद्र" },
+  mr:{ "Storm":"वादळ", "Rain":"पाऊस", "Heat":"उष्णता", "Cold":"थंडी", "Air quality":"हवेची गुणवत्ता", "UV":"UV", "Wind":"वारा", "Soil":"माती", "All clear":"सर्व ठीक", "Sea":"समुद्र" }
+};
+
+/* "Best day this week" purpose phrases */
+const PURPOSE_TR = {
+  en:{ fitness:"for training outdoors", health:"for time outside", farmer:"for fieldwork", student:"for campus plans", parent:"for family outings", worker:"for outdoor work", traveler:"for sightseeing", beach:"for a beach day", commuter:"for travel", event:"for an outdoor event", _:"for outdoor plans" },
+  hi:{ fitness:"बाहर व्यायाम के लिए", health:"बाहर समय बिताने के लिए", farmer:"खेत के काम के लिए", student:"कॉलेज/स्कूल की योजनाओं के लिए", parent:"परिवार के साथ घूमने के लिए", worker:"बाहर के काम के लिए", traveler:"घूमने-फिरने के लिए", beach:"बीच पर जाने के लिए", commuter:"सफ़र के लिए", event:"आउटडोर इवेंट के लिए", _:"बाहर की योजनाओं के लिए" },
+  mr:{ fitness:"बाहेर व्यायामासाठी", health:"बाहेर वेळ घालवण्यासाठी", farmer:"शेतीकामासाठी", student:"कॉलेज/शाळेच्या नियोजनासाठी", parent:"कुटुंबासोबत फिरण्यासाठी", worker:"बाहेरच्या कामासाठी", traveler:"फिरण्यासाठी", beach:"समुद्रकिनारी जाण्यासाठी", commuter:"प्रवासासाठी", event:"बाहेरच्या कार्यक्रमासाठी", _:"बाहेरच्या नियोजनासाठी" }
+};
+
+/* Alert text in Hindi and Marathi. Same structure as NOTIF (English). */
+const NOTIF_TR = {
+hi:{
+  thunder:{
+    fitness:{title:"आज आउटडोर ट्रेनिंग छोड़ें", msg:"आंधी-तूफ़ान की संभावना है — मौसम साफ़ होने तक आज का व्यायाम घर के अंदर करें।"},
+    health:{title:"तूफ़ान के दौरान घर में रहें", msg:"आंधी-तूफ़ान की संभावना है — खुले मैदान में या पेड़ों के नीचे खड़े होने से बचें।"},
+    farmer:{title:"तूफ़ान से पहले खेत सुरक्षित करें", msg:"आंधी-तूफ़ान की संभावना है — पशुओं को शेड में ले जाएं और खुला सामान बांध दें।"},
+    student:{title:"निकलने से पहले अपडेट देख लें", msg:"आंधी-तूफ़ान की संभावना है — सफ़र में दिक्कत हो सकती है, इसलिए निकलने से पहले स्कूल/कॉलेज से पता कर लें।"},
+    parent:{title:"स्कूल के अपडेट पर नज़र रखें", msg:"आंधी-तूफ़ान की संभावना है — जल्दी या देर से छुट्टी की सूचना पर ध्यान रखें।"},
+    worker:{title:"तूफ़ान में बाहर का काम रोकें", msg:"आंधी-तूफ़ान की संभावना है — तूफ़ान थमने तक बाहर या ऊंचाई वाले काम टालें।"},
+    traveler:{title:"आज देरी हो सकती है", msg:"आंधी-तूफ़ान की संभावना है — फ़्लाइट और सड़क यात्रा में देरी हो सकती है, अतिरिक्त समय रखें।"},
+    beach:{title:"पानी से दूर रहें", msg:"आंधी-तूफ़ान की संभावना है — बिजली गिरने के खतरे की वजह से पानी में जाना सुरक्षित नहीं।"},
+    commuter:{title:"सफ़र धीमा रहेगा", msg:"आंधी-तूफ़ान की संभावना है — जल्दी निकलें और निचले, जलभराव वाले रास्तों से बचें।"},
+    event:{title:"इनडोर बैकअप प्लान शुरू करें", msg:"आंधी-तूफ़ान की संभावना है — आउटडोर इवेंट ठीक नहीं; बैकअप जगह पर शिफ़्ट करें।"}
+  },
+  heavyRain:{
+    fitness:{title:"आज बाहर व्यायाम न करें", msg:"भारी बारिश की संभावना है — सुबह की सैर या दौड़ छोड़कर घर के अंदर व्यायाम करें।"},
+    health:{title:"सूखे रहें और कमरों में हवा आने दें", msg:"भारी बारिश की संभावना है — नमी से जोड़ों और सांस पर असर हो सकता है, बारिश थमने पर कमरों में हवा आने दें।"},
+    farmer:{title:"सिंचाई और छिड़काव रोकें", msg:"अच्छी-खासी बारिश की संभावना है — आज पानी न दें और छिड़काव टालें ताकि दवा बह न जाए।"},
+    student:{title:"देखें कि आज स्कूल/कॉलेज पर असर है या नहीं", msg:"भारी बारिश की संभावना है — रास्ता असुरक्षित लगे तो स्कूल/कॉलेज से पूछ लें, और रेनकोट ज़रूर रखें।"},
+    parent:{title:"भारी बारिश से स्कूल आने-जाने पर असर", msg:"छाता साथ रखें और वापसी की योजना पहले से बनाएं — ट्रैफ़िक सामान्य से धीमा रहेगा।"},
+    worker:{title:"तेज़ बारिश में बाहर का काम टालें", msg:"भारी बारिश की संभावना है — हो सके तो बाहर का काम टालें और गीली सतह पर संभलकर चलें।"},
+    traveler:{title:"आज की योजना में अतिरिक्त समय रखें", msg:"आपकी मंज़िल पर भारी बारिश की संभावना है — आज इनडोर जगहें घूमना बेहतर रहेगा।"},
+    beach:{title:"आज बीच का दिन नहीं", msg:"भारी बारिश की संभावना है — तैराकी और सर्फ़िंग के लिए हालात खराब रहेंगे और दृश्यता कम होगी।"},
+    commuter:{title:"निचली सड़कों पर जलभराव हो सकता है", msg:"भारी बारिश की संभावना है — सफ़र में अतिरिक्त समय रखें और पानी भरने वाले अंडरपास से बचें।"},
+    event:{title:"आउटडोर प्लान अंदर ले जाएं", msg:"भारी बारिश की संभावना है — आज इनडोर बैकअप जगह इस्तेमाल करने का सही दिन है।"}
+  },
+  moderateRain:{
+    fitness:{title:"हल्की जैकेट रखें, बारिश के हिसाब से प्लान करें", msg:"बाद में बारिश की संभावना है — जल्दी व्यायाम कर लेंगे तो सूखे रहेंगे।"},
+    health:{title:"छाता पास रखें", msg:"आज बारिश की संभावना है — वॉटरप्रूफ़ चीज़ साथ रखें और भीगने पर जल्दी सुखा लें।"},
+    farmer:{title:"आज सिंचाई न करें", msg:"बारिश की संभावना है — आज खेत में पानी देने की ज़रूरत नहीं; पानी की निकासी पर नज़र रखें।"},
+    student:{title:"आज छाता साथ रखें", msg:"बारिश की संभावना है — सफ़र के लिए छाता या रेनकोट रख लें।"},
+    parent:{title:"बच्चों के साथ छाता भेजें", msg:"आज बारिश की संभावना है — स्कूल जाते समय एक छाता रख लेना अच्छा रहेगा।"},
+    worker:{title:"साइट पर रेन गियर रखें", msg:"बाद में बारिश की संभावना है — हो सके तो बाहर का काम पहले निपटा लें।"},
+    traveler:{title:"छोटा छाता रख लें", msg:"आज आपकी मंज़िल पर बारिश की संभावना है — वॉटरप्रूफ़ कपड़े पास रखें।"},
+    beach:{title:"समुद्र उथल-पुथल रह सकता है", msg:"बारिश की संभावना है — दिन भर पानी में दृश्यता और आराम कम रहेगा।"},
+    commuter:{title:"थोड़ा जल्दी निकलें", msg:"बारिश की संभावना है — गीली सड़कों पर ट्रैफ़िक सामान्य से धीमा रहेगा।"},
+    event:{title:"बारिश का वैकल्पिक इंतज़ाम तैयार रखें", msg:"बारिश की संभावना है — इनडोर बैकअप या टेंट का इंतज़ाम पक्का कर लें।"}
+  },
+  lightRain:{
+    fitness:{title:"बारिश की हल्की संभावना", msg:"आज बाहर ट्रेनिंग कर रहे हैं तो छाता या टोपी रख लें।"},
+    health:{title:"बारिश की हल्की संभावना", msg:"आज छाता पास रखना अच्छा रहेगा।"},
+    farmer:{title:"बारिश की थोड़ी संभावना", msg:"इस पर भरोसा न करें — सिंचाई से पहले आसमान पर नज़र रखें।"},
+    student:{title:"बारिश की हल्की संभावना", msg:"आज बैग में छाता रख लेना ठीक रहेगा।"},
+    parent:{title:"बारिश की हल्की संभावना", msg:"आज बैग में छोटा छाता रख लेना अच्छा रहेगा।"},
+    worker:{title:"बारिश की हल्की संभावना", msg:"आसमान पर नज़र रखें — अभी कुछ बदलने की ज़रूरत नहीं।"},
+    traveler:{title:"बारिश की हल्की संभावना", msg:"बाहर की योजनाएं ठीक रहेंगी — बस हल्की जैकेट पास रखें।"},
+    beach:{title:"बारिश की हल्की संभावना", msg:"पानी पर ज़्यादा असर नहीं होगा, पर आसमान पर नज़र रखें।"},
+    commuter:{title:"बारिश की हल्की संभावना", msg:"आज के सफ़र पर बहुत कम असर की उम्मीद है।"},
+    event:{title:"बारिश की हल्की संभावना", msg:"खतरा कम है, फिर भी आउटडोर इंतज़ाम के लिए हल्का बैकअप रखें।"}
+  },
+  extremeHeat:{
+    fitness:{title:"गर्मी में बाहर ट्रेनिंग न करें", msg:"बहुत ज़्यादा गर्मी है — सुबह जल्दी या शाम को व्यायाम करें और पानी की बोतल साथ रखें।"},
+    health:{title:"लू से सावधान रहें", msg:"बहुत ज़्यादा गर्मी है — पानी पीते रहें, दोपहर की धूप से बचें और घर के बुज़ुर्गों का ध्यान रखें।"},
+    farmer:{title:"जल्दी पानी दें, जल्दी काम करें", msg:"बहुत ज़्यादा गर्मी है — पानी की बर्बादी कम करने के लिए सुबह या शाम सिंचाई करें और तेज़ गर्मी में खेत का काम टालें।"},
+    student:{title:"पानी की बोतल साथ रखें", msg:"आज बहुत ज़्यादा गर्मी है — पानी पास रखें और बेवजह बाहर रहने से बचें।"},
+    parent:{title:"बच्चों को पानी पिलाते रहें", msg:"बहुत ज़्यादा गर्मी है — ज़्यादा पानी रखें और बाहर खेलना सुबह या शाम तक सीमित रखें।"},
+    worker:{title:"बाहर के काम में लू का बड़ा खतरा", msg:"बहुत ज़्यादा गर्मी है — बार-बार छांव में आराम करें और साइट पर पानी रखें।"},
+    traveler:{title:"दोपहर की गर्मी से बचकर योजना बनाएं", msg:"बहुत ज़्यादा गर्मी है — सुबह या शाम घूमें और पानी साथ रखें।"},
+    beach:{title:"धूप से बचाव ज़रूरी है", msg:"बहुत ज़्यादा गर्मी है — बार-बार सनस्क्रीन लगाएं और तैराकी के बीच छांव में आराम करें।"},
+    commuter:{title:"गाड़ी में पानी रखें", msg:"बहुत ज़्यादा गर्मी है — चलाने से पहले गाड़ी को ठंडा होने दें और पानी पीते रहें।"},
+    event:{title:"मेहमानों के लिए छांव और पानी का इंतज़ाम करें", msg:"बहुत ज़्यादा गर्मी है — छांव वाली बैठक के साथ शाम का समय कहीं ज़्यादा आरामदायक रहेगा।"}
+  },
+  hot:{
+    fitness:{title:"पानी की बोतल साथ रखें", msg:"आज गर्मी है — व्यायाम के दौरान पानी पीते रहें।"},
+    health:{title:"पानी पीते रहें", msg:"आज गर्मी है — खासकर बाहर जा रहे हैं तो नियमित पानी पिएं।"},
+    farmer:{title:"मिट्टी की नमी पर नज़र रखें", msg:"आज गर्मी है — खेत सामान्य से जल्दी सूख सकते हैं।"},
+    student:{title:"पानी की बोतल साथ रखें", msg:"आज गर्मी है — पानी साथ रखना अच्छा रहेगा।"},
+    parent:{title:"ज़्यादा पानी रखें", msg:"आज गर्मी है — बच्चे बाहर खेल रहे हों तो उन्हें पानी पिलाते रहें।"},
+    worker:{title:"साइट पर पानी रखें", msg:"आज गर्मी है — शिफ़्ट के दौरान नियमित पानी पिएं।"},
+    traveler:{title:"पानी की बोतल साथ रखें", msg:"आपकी मंज़िल पर आज गर्मी है — घूमते समय पानी पीते रहें।"},
+    beach:{title:"बीच के लिए अच्छा मौसम — पानी पीते रहें", msg:"आज गर्मी है — सनस्क्रीन और पानी दोनों साथ रखें।"},
+    commuter:{title:"सफ़र में पानी रखें", msg:"आज गर्मी है — गाड़ी या बैग में पानी रखना अच्छा रहेगा।"},
+    event:{title:"मेहमानों के लिए पानी का इंतज़ाम रखें", msg:"आज गर्मी है — इवेंट बाहर है तो पानी का स्टॉल लगाएं।"}
+  },
+  cold:{
+    fitness:{title:"शुरू करने से पहले अच्छे से वॉर्म-अप करें", msg:"बाहर ठंड है — वॉर्म-अप लंबा रखें और ऐसा कपड़ा पहनें जिसे बाद में उतार सकें।"},
+    health:{title:"आज गर्म कपड़े पहनें", msg:"ठंड है — इससे जोड़ों और सांस पर असर हो सकता है, बाहर जाने से पहले गर्म कपड़े पहनें।"},
+    farmer:{title:"नाज़ुक फ़सल और पशुओं को बचाएं", msg:"ठंड है — पाले से प्रभावित होने वाली फ़सल को रात में ढकें और पशुओं के लिए आश्रय रखें।"},
+    student:{title:"कुछ गर्म पहनें", msg:"आज ठंड है — सफ़र के लिए जैकेट रखें।"},
+    parent:{title:"बच्चों के साथ जैकेट भेजें", msg:"ठंड है — दिन के लिए गर्म कपड़े रख लेना अच्छा रहेगा।"},
+    worker:{title:"बाहर के काम के लिए गर्म कपड़े पहनें", msg:"ठंड है — खासकर लंबे समय तक बाहर काम है तो परतों में कपड़े पहनें।"},
+    traveler:{title:"गर्म कपड़े रखें", msg:"आपकी मंज़िल पर ठंड है — जैकेट और गर्म कपड़ों से घूमना आरामदायक रहेगा।"},
+    beach:{title:"पानी में जाने के लिए सही नहीं", msg:"ठंड है — पानी सामान्य से ज़्यादा ठंडा लगेगा; जा रहे हैं तो वेटसूट मदद करेगा।"},
+    commuter:{title:"गाड़ी गर्म होने का समय दें", msg:"ठंड है — गाड़ी को गर्म होने दें और फिसलन वाली सतहों से सावधान रहें।"},
+    event:{title:"गर्माहट का इंतज़ाम करें", msg:"ठंड है — आउटडोर इवेंट के लिए हीटर या कंबल का इंतज़ाम अच्छा रहेगा।"}
+  },
+  poorAQI:{
+    fitness:{title:"मास्क पहनें या अंदर व्यायाम करें", msg:"हवा की गुणवत्ता खराब है — बाहर की ट्रेनिंग छोड़ें और बाहर जाते समय मास्क पहनें।"},
+    health:{title:"बाहर कम से कम जाएं", msg:"हवा की गुणवत्ता खराब है — सांस या दिल की बीमारी वाले लोग घर में रहें और दवा पास रखें।"},
+    farmer:{title:"खेत के काम में मास्क पहनें", msg:"हवा की गुणवत्ता खराब है — आज खेत के काम के दौरान मास्क पहनना बेहतर है।"},
+    student:{title:"PE को अंदर करवाने के बारे में पूछें", msg:"हवा की गुणवत्ता खराब है — आज आउटडोर खेल या PE अंदर होना बेहतर है।"},
+    parent:{title:"बाहर खेलने का समय कम रखें", msg:"हवा की गुणवत्ता खराब है — आज बच्चों को बाहर कम भेजें।"},
+    worker:{title:"साइट पर मास्क पहनें", msg:"हवा की गुणवत्ता खराब है — लंबे बाहरी या धूल वाले काम में मास्क पहनें।"},
+    traveler:{title:"बाहर घूमते समय मास्क पहनें", msg:"आपकी मंज़िल पर हवा की गुणवत्ता खराब है — आज इनडोर जगहें देखने पर विचार करें।"},
+    beach:{title:"हवा की गुणवत्ता खराब है", msg:"आज बीच पर कम समय बिताएं, खासकर बच्चे या सांस की तकलीफ़ वाले लोग।"},
+    commuter:{title:"ट्रैफ़िक में खिड़कियां बंद रखें", msg:"हवा की गुणवत्ता खराब है — गाड़ी में रीसर्कुलेट मोड रखें, या पैदल/दोपहिया पर मास्क पहनें।"},
+    event:{title:"आज इनडोर जगह पर विचार करें", msg:"हवा की गुणवत्ता खराब है — आउटडोर इवेंट में सांस की तकलीफ़ वाले मेहमानों पर असर हो सकता है।"}
+  },
+  moderateAQI:{
+    fitness:{title:"बाहर तेज़ व्यायाम कम करें", msg:"हवा की गुणवत्ता मध्यम है — हल्का व्यायाम ठीक है, पर बाहर ज़ोरदार व्यायाम कम करें।"},
+    health:{title:"हवा की गुणवत्ता में थोड़ी सावधानी ज़रूरी", msg:"संवेदनशील लोग — बच्चे, बुज़ुर्ग, अस्थमा या दिल के मरीज़ — बाहर लंबी मेहनत कम करें।"},
+    farmer:{title:"हवा की गुणवत्ता मध्यम है", msg:"खेत के काम के लिए आम तौर पर ठीक है, पर धूल या भारी मेहनत वाले काम आराम से करें।"},
+    student:{title:"हवा की गुणवत्ता मध्यम है", msg:"सामान्य गतिविधि ठीक है, पर आउटडोर खेल हों तो धीरे-धीरे खेलें।"},
+    parent:{title:"हवा की गुणवत्ता मध्यम है", msg:"बाहर का सामान्य समय ठीक है, पर अस्थमा या एलर्जी वाले बच्चों पर ध्यान दें।"},
+    worker:{title:"हवा की गुणवत्ता मध्यम है", msg:"बाहर काम आम तौर पर ठीक है, पर धूल वाले काम आराम से करें।"},
+    traveler:{title:"हवा की गुणवत्ता मध्यम है", msg:"घूमने के लिए ठीक है, हालांकि संवेदनशील यात्रियों को हल्की जलन महसूस हो सकती है।"},
+    beach:{title:"हवा की गुणवत्ता मध्यम है", msg:"आज बीच जाने के लिए आम तौर पर ठीक है।"},
+    commuter:{title:"हवा की गुणवत्ता मध्यम है", msg:"ज़्यादातर सफ़र के लिए ठीक है; संवेदनशील लोग भारी ट्रैफ़िक में खिड़कियां बंद रखें।"},
+    event:{title:"हवा की गुणवत्ता मध्यम है", msg:"मेहमानों के लिए ठीक रहेगा, हालांकि बहुत संवेदनशील लोगों को हल्की जलन हो सकती है।"}
+  },
+  highUV:{
+    fitness:{title:"दोपहर में बाहर हों तो शरीर ढकें", msg:"देर सुबह से दोपहर बाद तक UV ज़्यादा है — सनस्क्रीन और टोपी मदद करेंगे।"},
+    health:{title:"दोपहर की धूप कम लें", msg:"UV ज़्यादा है — बिना बचाव के धूप में कम रहें, खासकर बच्चे।"},
+    farmer:{title:"दोपहर के खेत के काम में शरीर ढकें", msg:"UV ज़्यादा है — देर सुबह से दोपहर तक बाहर हों तो टोपी और पूरी बांह के कपड़े पहनें।"},
+    student:{title:"आज सनस्क्रीन लगाना ठीक रहेगा", msg:"UV ज़्यादा है — स्कूल/कॉलेज में बाहर की गतिविधि हो तो सनस्क्रीन लगाएं।"},
+    parent:{title:"बच्चों के लिए सनस्क्रीन रखें", msg:"UV ज़्यादा है — आज सनस्क्रीन और टोपी साथ भेजना अच्छा रहेगा।"},
+    worker:{title:"हो सके तो छांव में आराम करें", msg:"UV ज़्यादा है — सनस्क्रीन और बीच-बीच में छांव में आराम दिन भर मदद करेगा।"},
+    traveler:{title:"सनस्क्रीन रखें", msg:"आपकी मंज़िल पर UV ज़्यादा है — दिन भर सनस्क्रीन दोबारा लगाते रहें।"},
+    beach:{title:"बार-बार सनस्क्रीन लगाएं", msg:"UV ज़्यादा है — हर दो घंटे में सनस्क्रीन लगाएं और रैश गार्ड पहनने पर विचार करें।"},
+    commuter:{title:"धूप की चमक तेज़ हो सकती है", msg:"UV ज़्यादा है — धूप का चश्मा मदद करेगा, खासकर सुबह-शाम गाड़ी चलाते समय।"},
+    event:{title:"मेहमानों के लिए छांव रखें", msg:"UV ज़्यादा है — छांव वाली बैठक या शामियाना मेहमानों को आराम देगा।"}
+  },
+  highWind:{
+    fitness:{title:"आज तेज़ हवा है", msg:"साइकलिंग या खुले मैदान में व्यायाम सामान्य से मुश्किल लगेगा — हवा से बचा हुआ रास्ता चुनें।"},
+    health:{title:"आज हवा तेज़ है", msg:"कोई बड़ी बात नहीं, पर धूल या पराग से परेशानी वाले लोगों को ज़्यादा जलन हो सकती है।"},
+    farmer:{title:"छिड़काव रोकें", msg:"तेज़ हवा की संभावना है — आज छिड़काव बहकर बेकार जाएगा।"},
+    student:{title:"आज तेज़ हवा है", msg:"स्कूल/कॉलेज जाते समय कागज़ और छाता संभालकर रखें।"},
+    parent:{title:"आज तेज़ हवा है", msg:"चिंता की कोई बात नहीं, बस स्कूल जाते समय हवा तेज़ रहेगी।"},
+    worker:{title:"मचान और ढीले सामान पर ध्यान दें", msg:"तेज़ हवा की संभावना है — सीढ़ी, चादरें या हवा में उड़ने वाली चीज़ों से सावधान रहें।"},
+    traveler:{title:"फ़्लाइट या फ़ेरी में देरी हो सकती है", msg:"तेज़ हवा की संभावना है — देरी के लिए परिवहन का समय जांच लें।"},
+    beach:{title:"समुद्र उथल-पुथल रहेगा", msg:"तेज़ हवा की संभावना है — समुद्र सामान्य से ज़्यादा उथल-पुथल रहेगा और बीच पर रेत उड़ सकती है।"},
+    commuter:{title:"खुली सड़कों पर सावधानी रखें", msg:"तेज़ हवा की संभावना है — दोपहिया और ऊंची गाड़ियां खास सावधानी रखें।"},
+    event:{title:"बाहर की सजावट और टेंट बांधकर रखें", msg:"तेज़ हवा की संभावना है — सजावट, शामियाने और बोर्ड अच्छे से बांध दें।"}
+  },
+  farmerDrySoil:{ farmer:{title:"आज फ़सल को पानी की ज़रूरत हो सकती है", msg:"मिट्टी में नमी कम है और खास बारिश की उम्मीद नहीं — आज सिंचाई के लिए अच्छा दिन है।"} },
+  farmerWetSoilGood:{ farmer:{title:"आज सिंचाई न करें", msg:"हाल की बारिश से मिट्टी में अभी भी अच्छी नमी है — आज पानी देने की ज़रूरत शायद नहीं।"} },
+  highWave:{ beach:{title:"ऊंची लहरों की चेतावनी", msg:"आज लहरें ऊंची हैं — तैराकी की सलाह नहीं; सिर्फ़ अनुभवी सर्फ़र, वह भी सावधानी से।"} },
+  flatSea:{ beach:{title:"आज समुद्र शांत है", msg:"लहरें बहुत कम हैं — आराम से तैरने के लिए अच्छा, पर सर्फ़िंग के लिए नहीं।"} },
+  niceDay:{
+    fitness:{title:"व्यायाम के लिए अच्छा दिन", msg:"मौसम बढ़िया है — आज बाहर दौड़ या व्यायाम का मज़ा लें।"},
+    health:{title:"आज सेहत को लेकर कोई चिंता नहीं", msg:"बाहर मौसम आरामदायक है। आपका दिन अच्छा रहे!"},
+    farmer:{title:"खेत के लिए शांत दिन", msg:"मौसम को लेकर कोई बड़ी चिंता नहीं — खेत के रोज़ के काम के लिए अच्छा दिन।"},
+    student:{title:"आज का दिन आसान रहेगा", msg:"सफ़र या कैंपस के दिन के लिए मौसम में कोई सरप्राइज़ नहीं। दिन अच्छा रहे!"},
+    parent:{title:"आज का दिन आराम से गुज़रेगा", msg:"आज किसी बात की योजना बनाने की ज़रूरत नहीं — परिवार के साथ दिन का मज़ा लें।"},
+    worker:{title:"काम के लिए मौसम साफ़", msg:"आज मौसम से कोई रुकावट नहीं — आपकी शिफ़्ट अच्छी रहे।"},
+    traveler:{title:"घूमने के लिए शानदार दिन", msg:"आज घूमने के लिए मौसम बढ़िया है। यात्रा का आनंद लें!"},
+    beach:{title:"बीच के लिए अच्छा दिन", msg:"आज बीच के लिए मौसम सुहाना है।"},
+    commuter:{title:"सफ़र आराम से रहेगा", msg:"आज के सफ़र के लिए मौसम को लेकर कोई चिंता नहीं।"},
+    event:{title:"आज मौसम अनुकूल है", msg:"आज आउटडोर इवेंट के लिए मौसम अच्छा है।"}
+  }
+},
+
+mr:{
+  thunder:{
+    fitness:{title:"आज बाहेरचा व्यायाम टाळा", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — वादळ जाईपर्यंत आजचा व्यायाम घरातच करा."},
+    health:{title:"वादळात घरातच रहा", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — मोकळ्या मैदानात किंवा झाडाखाली उभं राहणं टाळा."},
+    farmer:{title:"वादळाआधी शेत सुरक्षित करा", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — जनावरांना गोठ्यात न्या आणि सैल सामान बांधून ठेवा."},
+    student:{title:"निघण्याआधी अपडेट तपासा", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — प्रवासात अडथळा येऊ शकतो, म्हणून निघण्याआधी शाळा/कॉलेजकडे चौकशी करा."},
+    parent:{title:"शाळेच्या सूचनांवर लक्ष ठेवा", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — लवकर किंवा उशिरा सुट्टीच्या सूचनांकडे लक्ष द्या."},
+    worker:{title:"वादळात बाहेरचं काम थांबवा", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — वादळ जाईपर्यंत बाहेरचं किंवा उंचीवरचं काम पुढे ढकला."},
+    traveler:{title:"आज उशीर होऊ शकतो", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — विमान आणि रस्ते प्रवासाला उशीर होऊ शकतो, जास्तीचा वेळ ठेवा."},
+    beach:{title:"पाण्यापासून दूर रहा", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — वीज पडण्याच्या धोक्यामुळे पाण्यात जाणं सुरक्षित नाही."},
+    commuter:{title:"प्रवास संथ होईल", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — लवकर निघा आणि सखल, पाणी साचणारे रस्ते टाळा."},
+    event:{title:"इनडोअर पर्यायी योजना सुरू करा", msg:"मेघगर्जनेसह वादळाची शक्यता आहे — बाहेरचा कार्यक्रम योग्य नाही; पर्यायी जागेवर हलवा."}
+  },
+  heavyRain:{
+    fitness:{title:"आज बाहेर व्यायाम टाळा", msg:"मुसळधार पावसाची शक्यता आहे — सकाळचं चालणं किंवा धावणं टाळून घरातच व्यायाम करा."},
+    health:{title:"कोरडे रहा आणि खोल्या हवेशीर ठेवा", msg:"मुसळधार पावसाची शक्यता आहे — ओलाव्यामुळे सांधे आणि श्वासावर परिणाम होऊ शकतो, पाऊस कमी झाल्यावर खोल्यांत हवा खेळती ठेवा."},
+    farmer:{title:"पाणी देणं आणि फवारणी थांबवा", msg:"चांगल्या पावसाची शक्यता आहे — आज पाणी देऊ नका आणि फवारणी पुढे ढकला, नाहीतर औषध वाहून जाईल."},
+    student:{title:"आज शाळा/कॉलेजवर परिणाम आहे का ते तपासा", msg:"मुसळधार पावसाची शक्यता आहे — प्रवास असुरक्षित वाटत असेल तर शाळा/कॉलेजकडे चौकशी करा, आणि रेनकोट नक्की घ्या."},
+    parent:{title:"मुसळधार पावसाचा शाळेच्या प्रवासावर परिणाम", msg:"छत्री सोबत ठेवा आणि परतीचं नियोजन आधीच करा — ट्रॅफिक नेहमीपेक्षा संथ असेल."},
+    worker:{title:"जोरदार पावसात बाहेरचं काम टाळा", msg:"मुसळधार पावसाची शक्यता आहे — शक्य असल्यास बाहेरचं काम पुढे ढकला आणि ओल्या जागी जपून चाला."},
+    traveler:{title:"आजच्या नियोजनात जास्तीचा वेळ ठेवा", msg:"तुमच्या ठिकाणी मुसळधार पावसाची शक्यता आहे — आज इनडोअर ठिकाणं पाहणं जास्त सुरक्षित."},
+    beach:{title:"आज समुद्रकिनारी जाण्याचा दिवस नाही", msg:"मुसळधार पावसाची शक्यता आहे — पोहण्यासाठी आणि सर्फिंगसाठी परिस्थिती खराब असेल आणि दृश्यमानता कमी असेल."},
+    commuter:{title:"सखल रस्त्यांवर पाणी साचू शकतं", msg:"मुसळधार पावसाची शक्यता आहे — प्रवासाला जास्त वेळ ठेवा आणि पाणी साचणारे अंडरपास टाळा."},
+    event:{title:"बाहेरचा कार्यक्रम आत हलवा", msg:"मुसळधार पावसाची शक्यता आहे — आज इनडोअर पर्यायी जागा वापरण्याचा योग्य दिवस आहे."}
+  },
+  moderateRain:{
+    fitness:{title:"हलकं जॅकेट घ्या, पावसानुसार नियोजन करा", msg:"नंतर पावसाची शक्यता आहे — लवकर व्यायाम केलात तर कोरडे राहाल."},
+    health:{title:"छत्री जवळ ठेवा", msg:"आज पावसाची शक्यता आहे — वॉटरप्रूफ काहीतरी सोबत ठेवा आणि भिजलात तर लगेच कोरडे व्हा."},
+    farmer:{title:"आज पाणी देऊ नका", msg:"पावसाची शक्यता आहे — आज शेताला पाणी द्यायची गरज नाही; पाण्याच्या निचऱ्याकडे लक्ष ठेवा."},
+    student:{title:"आज छत्री सोबत घ्या", msg:"पावसाची शक्यता आहे — प्रवासासाठी छत्री किंवा रेनकोट घ्या."},
+    parent:{title:"मुलांसोबत छत्री द्या", msg:"आज पावसाची शक्यता आहे — शाळेत जाताना एक छत्री सोबत देणं चांगलं."},
+    worker:{title:"साइटवर रेनगिअर ठेवा", msg:"नंतर पावसाची शक्यता आहे — शक्य असल्यास बाहेरचं काम आधी उरकून घ्या."},
+    traveler:{title:"लहान छत्री सोबत घ्या", msg:"आज तुमच्या ठिकाणी पावसाची शक्यता आहे — वॉटरप्रूफ कपडे जवळ ठेवा."},
+    beach:{title:"समुद्र खवळलेला असू शकतो", msg:"पावसाची शक्यता आहे — दिवसभर पाण्यातील दृश्यमानता आणि आराम कमी होईल."},
+    commuter:{title:"थोडं लवकर निघा", msg:"पावसाची शक्यता आहे — ओल्या रस्त्यांमुळे ट्रॅफिक नेहमीपेक्षा संथ असेल."},
+    event:{title:"पावसासाठी पर्यायी व्यवस्था तयार ठेवा", msg:"पावसाची शक्यता आहे — इनडोअर पर्याय किंवा मंडपाची व्यवस्था निश्चित करा."}
+  },
+  lightRain:{
+    fitness:{title:"पावसाची थोडी शक्यता", msg:"आज बाहेर व्यायाम करत असाल तर छत्री किंवा टोपी घेणं चांगलं."},
+    health:{title:"पावसाची थोडी शक्यता", msg:"आज छत्री जवळ ठेवणं चांगलं."},
+    farmer:{title:"पावसाची थोडी शक्यता", msg:"यावर अवलंबून राहू नका — पाणी देण्याआधी आकाशाकडे लक्ष ठेवा."},
+    student:{title:"पावसाची थोडी शक्यता", msg:"आज बॅगेत छत्री ठेवणं चांगलं राहील."},
+    parent:{title:"पावसाची थोडी शक्यता", msg:"आज बॅगेत लहान छत्री ठेवणं चांगलं."},
+    worker:{title:"पावसाची थोडी शक्यता", msg:"आकाशाकडे लक्ष ठेवा — आत्ता काही बदल करायची गरज नाही."},
+    traveler:{title:"पावसाची थोडी शक्यता", msg:"बाहेरचे प्लॅन ठीक राहतील — फक्त हलकं जॅकेट जवळ ठेवा."},
+    beach:{title:"पावसाची थोडी शक्यता", msg:"पाण्यावर फारसा परिणाम होणार नाही, पण आकाशाकडे लक्ष ठेवा."},
+    commuter:{title:"पावसाची थोडी शक्यता", msg:"आजच्या प्रवासावर फारसा परिणाम अपेक्षित नाही."},
+    event:{title:"पावसाची थोडी शक्यता", msg:"धोका कमी आहे, तरी बाहेरच्या व्यवस्थेसाठी छोटा पर्याय तयार ठेवा."}
+  },
+  extremeHeat:{
+    fitness:{title:"उष्णतेत बाहेर व्यायाम टाळा", msg:"खूप जास्त उष्णता आहे — सकाळी लवकर किंवा संध्याकाळी व्यायाम करा आणि पाण्याची बाटली सोबत ठेवा."},
+    health:{title:"उष्माघातापासून सावध रहा", msg:"खूप जास्त उष्णता आहे — भरपूर पाणी प्या, दुपारचं ऊन टाळा आणि घरातल्या वृद्धांची काळजी घ्या."},
+    farmer:{title:"लवकर पाणी द्या, लवकर काम करा", msg:"खूप जास्त उष्णता आहे — पाण्याची नासाडी कमी करण्यासाठी सकाळी किंवा संध्याकाळी पाणी द्या आणि भर उन्हात शेतीकाम टाळा."},
+    student:{title:"पाण्याची बाटली सोबत ठेवा", msg:"आज खूप जास्त उष्णता आहे — पाणी जवळ ठेवा आणि विनाकारण बाहेर राहणं टाळा."},
+    parent:{title:"मुलांना पाणी पाजत रहा", msg:"खूप जास्त उष्णता आहे — जास्तीचं पाणी सोबत द्या आणि बाहेर खेळणं सकाळ-संध्याकाळपुरतं ठेवा."},
+    worker:{title:"बाहेरच्या कामात उष्माघाताचा मोठा धोका", msg:"खूप जास्त उष्णता आहे — वारंवार सावलीत विश्रांती घ्या आणि साइटवर पाणी ठेवा."},
+    traveler:{title:"दुपारचं ऊन टाळून नियोजन करा", msg:"खूप जास्त उष्णता आहे — सकाळी किंवा संध्याकाळी फिरा आणि पाणी सोबत ठेवा."},
+    beach:{title:"उन्हापासून संरक्षण आवश्यक", msg:"खूप जास्त उष्णता आहे — वारंवार सनस्क्रीन लावा आणि पोहण्याच्या मध्ये सावलीत विश्रांती घ्या."},
+    commuter:{title:"गाडीत पाणी ठेवा", msg:"खूप जास्त उष्णता आहे — चालवण्याआधी गाडी थंड होऊ द्या आणि पाणी पीत रहा."},
+    event:{title:"पाहुण्यांसाठी सावली आणि पाण्याची सोय करा", msg:"खूप जास्त उष्णता आहे — सावलीत बसण्याची सोय असलेली संध्याकाळची वेळ खूप जास्त आरामदायक ठरेल."}
+  },
+  hot:{
+    fitness:{title:"पाण्याची बाटली सोबत ठेवा", msg:"आज उष्ण दिवस आहे — व्यायाम करताना पाणी पीत रहा."},
+    health:{title:"पाणी पीत रहा", msg:"आज उष्ण दिवस आहे — विशेषतः बाहेर जात असाल तर नियमित पाणी प्या."},
+    farmer:{title:"मातीतील ओलाव्याकडे लक्ष ठेवा", msg:"आज उष्ण दिवस आहे — शेत नेहमीपेक्षा लवकर कोरडं पडू शकतं."},
+    student:{title:"पाण्याची बाटली सोबत ठेवा", msg:"आज उष्ण दिवस आहे — पाणी सोबत ठेवणं चांगलं."},
+    parent:{title:"जास्तीचं पाणी सोबत द्या", msg:"आज उष्ण दिवस आहे — मुलं बाहेर खेळत असतील तर त्यांना पाणी पाजत रहा."},
+    worker:{title:"साइटवर पाणी ठेवा", msg:"आज उष्ण दिवस आहे — शिफ्टमध्ये नियमित पाणी प्या."},
+    traveler:{title:"पाण्याची बाटली सोबत ठेवा", msg:"तुमच्या ठिकाणी आज उष्ण दिवस आहे — फिरताना पाणी पीत रहा."},
+    beach:{title:"समुद्रकिनाऱ्यासाठी छान हवामान — पाणी पीत रहा", msg:"आज उष्ण दिवस आहे — सनस्क्रीन आणि पाणी दोन्ही सोबत ठेवा."},
+    commuter:{title:"प्रवासासाठी पाणी सोबत ठेवा", msg:"आज उष्ण दिवस आहे — गाडीत किंवा बॅगेत पाणी ठेवणं चांगलं."},
+    event:{title:"पाहुण्यांसाठी पाण्याची सोय ठेवा", msg:"आज उष्ण दिवस आहे — कार्यक्रम बाहेर असेल तर पाण्याचा स्टॉल लावा."}
+  },
+  cold:{
+    fitness:{title:"सुरुवातीला नीट वॉर्म-अप करा", msg:"बाहेर थंडी आहे — वॉर्म-अप जास्त वेळ करा आणि नंतर काढता येईल असा कपडा घाला."},
+    health:{title:"आज उबदार कपडे घाला", msg:"थंडी आहे — याचा सांधे आणि श्वासावर परिणाम होऊ शकतो, बाहेर पडण्याआधी उबदार कपडे घाला."},
+    farmer:{title:"नाजूक पिकं आणि जनावरांचं संरक्षण करा", msg:"थंडी आहे — दंवाला संवेदनशील पिकं रात्री झाकून ठेवा आणि जनावरांना निवारा असल्याची खात्री करा."},
+    student:{title:"काहीतरी उबदार घाला", msg:"आज थंडी आहे — प्रवासासाठी जॅकेट सोबत घ्या."},
+    parent:{title:"मुलांसोबत जॅकेट द्या", msg:"थंडी आहे — दिवसासाठी उबदार कपडे सोबत देणं चांगलं."},
+    worker:{title:"बाहेरच्या कामासाठी उबदार कपडे घाला", msg:"थंडी आहे — विशेषतः जास्त वेळ बाहेर काम असेल तर थरांमध्ये कपडे घाला."},
+    traveler:{title:"उबदार कपडे सोबत घ्या", msg:"तुमच्या ठिकाणी थंडी आहे — जॅकेट आणि उबदार कपड्यांमुळे फिरणं आरामदायक होईल."},
+    beach:{title:"पाण्यात जाण्यासाठी योग्य नाही", msg:"थंडी आहे — पाणी नेहमीपेक्षा जास्त थंड वाटेल; जात असाल तर वेटसूट उपयोगी ठरेल."},
+    commuter:{title:"गाडी गरम होऊ द्या", msg:"थंडी आहे — गाडी गरम होण्यासाठी वेळ द्या आणि निसरड्या रस्त्यांवर सावध रहा."},
+    event:{title:"उबदारपणाची सोय करा", msg:"थंडी आहे — बाहेरच्या कार्यक्रमासाठी हीटर किंवा ब्लँकेटची सोय करणं चांगलं."}
+  },
+  poorAQI:{
+    fitness:{title:"मास्क घाला किंवा घरात व्यायाम करा", msg:"हवेची गुणवत्ता खराब आहे — बाहेरचा व्यायाम टाळा आणि बाहेर जाताना मास्क घाला."},
+    health:{title:"बाहेर जाणं कमी करा", msg:"हवेची गुणवत्ता खराब आहे — श्वसन किंवा हृदयाचे आजार असलेल्यांनी घरात रहावं आणि औषधं जवळ ठेवावीत."},
+    farmer:{title:"शेतीकामात मास्क वापरा", msg:"हवेची गुणवत्ता खराब आहे — आज शेतात काम करताना मास्क घालणं चांगलं."},
+    student:{title:"PE घरात घेण्याबद्दल विचारा", msg:"हवेची गुणवत्ता खराब आहे — आज मैदानी खेळ किंवा PE इनडोअर घेणं चांगलं."},
+    parent:{title:"बाहेर खेळण्याचा वेळ कमी ठेवा", msg:"हवेची गुणवत्ता खराब आहे — आज मुलांना बाहेर कमी पाठवा."},
+    worker:{title:"साइटवर मास्क घाला", msg:"हवेची गुणवत्ता खराब आहे — जास्त वेळ बाहेरच्या किंवा धुळीच्या कामात मास्क घाला."},
+    traveler:{title:"बाहेर फिरताना मास्क घाला", msg:"तुमच्या ठिकाणी हवेची गुणवत्ता खराब आहे — आज इनडोअर ठिकाणं पाहण्याचा विचार करा."},
+    beach:{title:"हवेची गुणवत्ता खराब आहे", msg:"आज समुद्रकिनारी कमी वेळ घालवा, विशेषतः मुलं किंवा श्वसनाचा त्रास असलेल्यांनी."},
+    commuter:{title:"ट्रॅफिकमध्ये खिडक्या बंद ठेवा", msg:"हवेची गुणवत्ता खराब आहे — गाडीत रीसर्क्युलेट मोड वापरा, किंवा चालताना/दुचाकीवर मास्क घाला."},
+    event:{title:"आज इनडोअर जागेचा विचार करा", msg:"हवेची गुणवत्ता खराब आहे — बाहेरच्या कार्यक्रमात श्वसनाचा त्रास असलेल्या पाहुण्यांवर परिणाम होऊ शकतो."}
+  },
+  moderateAQI:{
+    fitness:{title:"बाहेर जोरदार व्यायाम कमी करा", msg:"हवेची गुणवत्ता मध्यम आहे — हलका व्यायाम ठीक आहे, पण बाहेर जोरदार व्यायाम कमी करा."},
+    health:{title:"हवेच्या गुणवत्तेबाबत थोडी काळजी घ्या", msg:"संवेदनशील लोकांनी — मुलं, वृद्ध, दमा किंवा हृदयरोगी — बाहेर जास्त वेळ श्रम टाळावेत."},
+    farmer:{title:"हवेची गुणवत्ता मध्यम आहे", msg:"शेतीकामासाठी साधारणपणे ठीक आहे, पण धुळीच्या किंवा जास्त श्रमाच्या कामात सावकाश करा."},
+    student:{title:"हवेची गुणवत्ता मध्यम आहे", msg:"नेहमीच्या कामांसाठी ठीक आहे, पण मैदानी खेळ असतील तर सावकाश खेळा."},
+    parent:{title:"हवेची गुणवत्ता मध्यम आहे", msg:"नेहमीसारखं बाहेर जाणं ठीक आहे, पण दमा किंवा ॲलर्जी असलेल्या मुलांकडे लक्ष द्या."},
+    worker:{title:"हवेची गुणवत्ता मध्यम आहे", msg:"बाहेर काम साधारणपणे ठीक आहे, पण धुळीच्या कामात सावकाश करा."},
+    traveler:{title:"हवेची गुणवत्ता मध्यम आहे", msg:"फिरण्यासाठी ठीक आहे, पण संवेदनशील प्रवाशांना थोडी जळजळ जाणवू शकते."},
+    beach:{title:"हवेची गुणवत्ता मध्यम आहे", msg:"आज समुद्रकिनारी जाण्यासाठी साधारणपणे ठीक आहे."},
+    commuter:{title:"हवेची गुणवत्ता मध्यम आहे", msg:"बहुतेक प्रवासासाठी ठीक आहे; संवेदनशील लोकांनी जास्त ट्रॅफिकमध्ये खिडक्या बंद ठेवाव्यात."},
+    event:{title:"हवेची गुणवत्ता मध्यम आहे", msg:"पाहुण्यांसाठी ठीक राहील, पण खूप संवेदनशील लोकांना थोडी जळजळ जाणवू शकते."}
+  },
+  highUV:{
+    fitness:{title:"दुपारी बाहेर असाल तर अंग झाका", msg:"उशिरा सकाळपासून दुपारपर्यंत UV जास्त आहे — सनस्क्रीन आणि टोपी उपयोगी ठरतील."},
+    health:{title:"दुपारचं ऊन कमी घ्या", msg:"UV जास्त आहे — संरक्षणाशिवाय उन्हात कमी वेळ रहा, विशेषतः मुलांनी."},
+    farmer:{title:"दुपारच्या शेतीकामात अंग झाका", msg:"UV जास्त आहे — उशिरा सकाळपासून दुपारपर्यंत बाहेर असाल तर टोपी आणि पूर्ण बाह्यांचे कपडे घाला."},
+    student:{title:"आज सनस्क्रीन लावणं चांगलं", msg:"UV जास्त आहे — शाळा/कॉलेजमध्ये बाहेरचा उपक्रम असेल तर सनस्क्रीन लावा."},
+    parent:{title:"मुलांसाठी सनस्क्रीन द्या", msg:"UV जास्त आहे — आज सनस्क्रीन आणि टोपी सोबत देणं चांगलं."},
+    worker:{title:"शक्य असल्यास सावलीत विश्रांती घ्या", msg:"UV जास्त आहे — सनस्क्रीन आणि मधूनमधून सावलीत विश्रांती दिवसभर उपयोगी ठरेल."},
+    traveler:{title:"सनस्क्रीन सोबत घ्या", msg:"तुमच्या ठिकाणी UV जास्त आहे — दिवसभर सनस्क्रीन पुन्हा पुन्हा लावा."},
+    beach:{title:"वारंवार सनस्क्रीन लावा", msg:"UV जास्त आहे — दर दोन तासांनी सनस्क्रीन लावा आणि रॅश गार्ड घालण्याचा विचार करा."},
+    commuter:{title:"उन्हाची चकाकी तीव्र असू शकते", msg:"UV जास्त आहे — गॉगल उपयोगी ठरेल, विशेषतः सकाळी-संध्याकाळी गाडी चालवताना."},
+    event:{title:"पाहुण्यांसाठी सावलीची सोय करा", msg:"UV जास्त आहे — सावलीत बसण्याची सोय किंवा मंडप पाहुण्यांना आराम देईल."}
+  },
+  highWind:{
+    fitness:{title:"आज जोरदार वारा आहे", msg:"सायकलिंग किंवा मोकळ्या मैदानातील व्यायाम नेहमीपेक्षा जड जाईल — वाऱ्यापासून आडोसा असलेला मार्ग निवडा."},
+    health:{title:"आज वारा जोरात आहे", msg:"फार काळजीचं नाही, पण धूळ किंवा परागकणांचा त्रास असणाऱ्यांना जास्त जळजळ होऊ शकते."},
+    farmer:{title:"फवारणी थांबवा", msg:"जोरदार वाऱ्याची शक्यता आहे — आज फवारणी वाहून जाऊन वाया जाईल."},
+    student:{title:"आज जोरदार वारा आहे", msg:"शाळा/कॉलेजला जाताना कागद आणि छत्री नीट सांभाळा."},
+    parent:{title:"आज जोरदार वारा आहे", msg:"काळजीचं काही नाही, फक्त शाळेच्या प्रवासात वारा जोरात असेल."},
+    worker:{title:"परांची आणि सैल सामानाकडे लक्ष द्या", msg:"जोरदार वाऱ्याची शक्यता आहे — शिडी, पत्रे किंवा वाऱ्याने उडू शकणाऱ्या वस्तूंबाबत सावध रहा."},
+    traveler:{title:"विमान किंवा फेरीला उशीर होऊ शकतो", msg:"जोरदार वाऱ्याची शक्यता आहे — उशिराबाबत वाहतुकीचं वेळापत्रक तपासा."},
+    beach:{title:"समुद्र खवळलेला असेल", msg:"जोरदार वाऱ्याची शक्यता आहे — समुद्र नेहमीपेक्षा जास्त खवळलेला असेल आणि किनाऱ्यावर वाळू उडू शकते."},
+    commuter:{title:"मोकळ्या रस्त्यांवर सावध रहा", msg:"जोरदार वाऱ्याची शक्यता आहे — दुचाकी आणि उंच वाहनांनी विशेष काळजी घ्यावी."},
+    event:{title:"बाहेरची सजावट आणि मंडप बांधून ठेवा", msg:"जोरदार वाऱ्याची शक्यता आहे — सजावट, मंडप आणि फलक नीट बांधून ठेवा."}
+  },
+  farmerDrySoil:{ farmer:{title:"आज पिकाला पाण्याची गरज असू शकते", msg:"मातीत ओलावा कमी आहे आणि फारसा पाऊस अपेक्षित नाही — आज पाणी देण्यासाठी चांगला दिवस आहे."} },
+  farmerWetSoilGood:{ farmer:{title:"आज पाणी देऊ नका", msg:"नुकत्याच झालेल्या पावसामुळे मातीत अजून चांगला ओलावा आहे — आज पाणी द्यायची गरज बहुधा नाही."} },
+  highWave:{ beach:{title:"उंच लाटांचा इशारा", msg:"आज लाटा उंच आहेत — पोहणं टाळा; फक्त अनुभवी सर्फर, तेही काळजीपूर्वक."} },
+  flatSea:{ beach:{title:"आज समुद्र शांत आहे", msg:"लाटा खूप कमी आहेत — शांतपणे पोहण्यासाठी चांगलं, पण सर्फिंगसाठी योग्य नाही."} },
+  niceDay:{
+    fitness:{title:"व्यायामासाठी चांगला दिवस", msg:"हवामान छान आहे — आज बाहेर धावण्याचा किंवा व्यायामाचा आनंद घ्या."},
+    health:{title:"आज आरोग्याची काळजी नाही", msg:"बाहेरचं हवामान आरामदायक आहे. तुमचा दिवस चांगला जावो!"},
+    farmer:{title:"शेतासाठी शांत दिवस", msg:"हवामानाची फारशी काळजी नाही — शेतीच्या रोजच्या कामांसाठी चांगला दिवस."},
+    student:{title:"आजचा दिवस सोपा", msg:"प्रवासात किंवा कॉलेजच्या दिवशी हवामानाचं कोणतंही सरप्राइज नाही. दिवस छान जावो!"},
+    parent:{title:"आजचा दिवस निवांत", msg:"आज कशाचंही नियोजन करायची गरज नाही — कुटुंबासोबत दिवसाचा आनंद घ्या."},
+    worker:{title:"कामासाठी हवामान स्वच्छ", msg:"आज हवामानाचा कोणताही अडथळा नाही — तुमची शिफ्ट चांगली जावो."},
+    traveler:{title:"फिरण्यासाठी छान दिवस", msg:"आज फिरण्यासाठी हवामान छान आहे. प्रवासाचा आनंद घ्या!"},
+    beach:{title:"समुद्रकिनाऱ्यासाठी चांगला दिवस", msg:"आज समुद्रकिनाऱ्यासाठी हवामान सुखद आहे."},
+    commuter:{title:"प्रवास सुरळीत होईल", msg:"आजच्या प्रवासासाठी हवामानाची काळजी नाही."},
+    event:{title:"आज हवामान अनुकूल आहे", msg:"आज बाहेरच्या कार्यक्रमासाठी हवामान चांगलं आहे."}
+  }
+}
+};
+
+
+/* =======================================================================
    STATE
 ======================================================================= */
 const state = {
@@ -603,7 +1377,7 @@ let inIframe = false;
 try{ inIframe = window.self !== window.top; }catch(e){ inIframe = true; }
 if(inIframe){
   const b = $("env-banner");
-  b.innerHTML = "You're viewing this inside an embedded preview, which usually blocks location access and can block live weather data. Download this file and open it directly in your browser for everything to work.";
+  b.textContent = t("envBanner");
   b.classList.add("show");
 }
 
@@ -611,6 +1385,7 @@ if(inIframe){
    ICONS INTO STATIC CHROME (back button, nav bar, topbar refresh)
 ======================================================================= */
 $("back-to-role").innerHTML = '<span style="display:inline-flex; transform:rotate(180deg);">' + icon("chevron") + '</span>';
+$("auth-back").innerHTML = '<span style="display:inline-flex; transform:rotate(180deg);">' + icon("chevron") + '</span>';
 $("ob-back").innerHTML = '<span style="display:inline-flex; transform:rotate(180deg);">' + icon("chevron") + '</span>';
 $("app-refresh").innerHTML = icon("refresh");
 $("open-profile").innerHTML = icon("user");
@@ -621,48 +1396,36 @@ document.querySelectorAll(".sheet-head [data-close]").forEach(b => { b.innerHTML
    ONBOARDING — build interest grid
 ======================================================================= */
 const grid = $("interest-grid");
-grid.innerHTML = ROLE_ORDER.map(key => {
-  const r = ROLES[key];
-  return '<button class="interest-tile" data-role="' + key + '">' +
-    '<div class="tile-icon-chip" style="background:' + r.chipSoft + '; color:' + r.chip + ';">' + icon(r.icon) + '</div>' +
-    '<div class="t-label">' + r.label + '</div>' +
-    '<div class="t-desc">' + roleDesc(key) + '</div>' +
-  '</button>';
-}).join("");
-
-function roleDesc(key){
-  return {
-    fitness:"Runs, rides & training",
-    health:"Air quality & wellbeing",
-    farmer:"Soil, rain & crop planning",
-    student:"Commute & campus days",
-    parent:"School runs & family days",
-    worker:"Outdoor & site work",
-    traveler:"Trips & destinations",
-    beach:"Waves, tides & sun",
-    commuter:"Drive, ride & transit",
-    event:"Outdoor events & dates"
-  }[key];
+function buildInterestGrid(){
+  grid.innerHTML = ROLE_ORDER.map(key => {
+    const r = ROLES[key];
+    return '<button class="interest-tile' + (key === state.role ? ' current' : '') + '" data-role="' + key + '">' +
+      '<div class="tile-icon-chip" style="background:' + r.chipSoft + '; color:' + r.chip + ';">' + icon(r.icon) + '</div>' +
+      '<div class="t-label">' + roleLabel(key) + '</div>' +
+      '<div class="t-desc">' + roleDesc(key) + '</div>' +
+    '</button>';
+  }).join("");
 }
 
-$("get-started-btn").addEventListener("click", () => openInterestPicker());
+$("get-started-btn").addEventListener("click", () => openAuth("splash"));
 
-grid.querySelectorAll(".interest-tile").forEach(tile => {
-  tile.addEventListener("click", () => {
-    state.role = tile.getAttribute("data-role");
-    suggFilter = "all";
-    // Location already known? Skip the location screen and reload for the new interest.
-    if(state.lat != null){
-      fetchAllData(state.lat, state.lon, state.placeName);
-    } else {
-      showView("view-location");
-    }
-  });
+grid.addEventListener("click", (e) => {
+  const tile = e.target.closest(".interest-tile");
+  if(!tile) return;
+  state.role = tile.getAttribute("data-role");
+  suggFilter = "all";
+  saveProfile();
+  // Location already known? Skip the location screen and reload for the new interest.
+  if(state.lat != null){
+    fetchAllData(state.lat, state.lon, state.placeName);
+  } else {
+    showView("view-location");
+  }
 });
 function openInterestPicker(){
   const hasApp = state.weather != null;
   $("ob-back-wrap").style.display = hasApp ? "flex" : "none";
-  grid.querySelectorAll(".interest-tile").forEach(t => t.classList.toggle("current", t.getAttribute("data-role") === state.role));
+  buildInterestGrid();
   showView("view-onboarding");
 }
 $("ob-back").addEventListener("click", () => showView("view-app"));
@@ -683,37 +1446,34 @@ $("gps-btn").addEventListener("click", () => {
   const statusEl = $("location-status");
   statusEl.classList.remove("show");
   if(!("geolocation" in navigator)){
-    statusEl.textContent = "Location services aren't available in this browser. Please enter your location manually.";
+    statusEl.textContent = t("locNoSupport");
     statusEl.classList.add("show");
     return;
   }
   if(window.isSecureContext === false){
-    statusEl.textContent = "Location access needs a secure connection (https) or a local file opened directly in the browser.";
+    statusEl.textContent = t("locSecure");
     statusEl.classList.add("show");
     return;
   }
   const btn = $("gps-btn");
   const original = btn.textContent;
   btn.disabled = true;
-  btn.textContent = "Locating…";
+  btn.textContent = t("locating");
   navigator.geolocation.getCurrentPosition(
     async (pos) => {
       const lat = pos.coords.latitude, lon = pos.coords.longitude;
-      let name = "Current location";
+      let name = t("currentLocationName");
       try{ name = await reverseGeocode(lat, lon); }catch(e){}
       btn.disabled = false; btn.textContent = original;
       fetchAllData(lat, lon, name);
     },
     (err) => {
       btn.disabled = false; btn.textContent = original;
-      let msg = "We couldn't get your location. Please enter it manually below.";
+      let msg = t("locDefault");
       if(err){
-        if(err.code === 1){
-          msg = inIframe
-            ? "Location access is blocked inside this embedded preview. Download the file and open it directly in your browser, or enter your location manually."
-            : "Location permission was denied. Check your browser's site settings, or enter your location manually.";
-        } else if(err.code === 2) msg = "Your device couldn't determine a location right now. Please try again or enter it manually.";
-        else if(err.code === 3) msg = "Location request timed out. Please try again or enter it manually.";
+        if(err.code === 1) msg = inIframe ? t("locIframe") : t("locDenied");
+        else if(err.code === 2) msg = t("locUnavail");
+        else if(err.code === 3) msg = t("locTimeout");
       }
       statusEl.textContent = msg;
       statusEl.classList.add("show");
@@ -726,7 +1486,7 @@ async function reverseGeocode(lat, lon){
   const res = await fetch("https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=" + lat + "&longitude=" + lon + "&localityLanguage=en");
   if(!res.ok) throw new Error("reverse geocode failed");
   const data = await res.json();
-  const city = data.city || data.locality || data.principalSubdivision || "Your area";
+  const city = data.city || data.locality || data.principalSubdivision || t("yourArea");
   const region = data.principalSubdivision || data.countryName || "";
   return region && region !== city ? (city + ", " + region) : city;
 }
@@ -741,7 +1501,7 @@ $("search-input").addEventListener("input", (e) => {
 
 async function runSearch(q, boxId, onSelect){
   const box = $(boxId);
-  box.innerHTML = '<div class="suggestion-item" style="cursor:default; color:var(--muted);">Searching…</div>';
+  box.innerHTML = '<div class="suggestion-item" style="cursor:default; color:var(--muted);">' + t("searching") + '</div>';
   box.classList.add("show");
   try{
     const url = "https://geocoding-api.open-meteo.com/v1/search?name=" + encodeURIComponent(q) + "&count=6&language=en&format=json";
@@ -751,16 +1511,14 @@ async function runSearch(q, boxId, onSelect){
     renderSuggestions(data.results || [], boxId, onSelect);
   }catch(e){
     console.error("search failed", e);
-    const reason = inIframe
-      ? "Search couldn't reach the weather service — this embedded preview may be blocking network access."
-      : "Search couldn't reach the weather service. Check your connection and try again.";
+    const reason = inIframe ? t("searchFailIframe") : t("searchFail");
     box.innerHTML = '<div class="suggestion-item" style="cursor:default;">' + reason + '</div>';
   }
 }
 function renderSuggestions(results, boxId, onSelect){
   const box = $(boxId);
   if(!results.length){
-    box.innerHTML = '<div class="suggestion-item" style="cursor:default; color:var(--muted);">No matches found. Try a different spelling.</div>';
+    box.innerHTML = '<div class="suggestion-item" style="cursor:default; color:var(--muted);">' + t("noMatches") + '</div>';
     return;
   }
   box.innerHTML = results.map((r,i) => {
@@ -782,10 +1540,13 @@ function renderSuggestions(results, boxId, onSelect){
    DATA FETCHING
 ======================================================================= */
 async function fetchAllData(lat, lon, placeName){
-  state.lat = lat; state.lon = lon; state.placeName = placeName || "Your location";
+  state.lat = lat; state.lon = lon; state.placeName = placeName || t("yourLocation");
+  addToSavedLocations(state.placeName, lat, lon);
+  saveProfile();
   showView("view-app");
   goNav("home");
-  $("screen-home").innerHTML = '<div class="loading-screen"><div class="spinner"></div><p>Reading the sky over ' + escapeHtml(state.placeName) + '…</p></div>';
+  $("greet-place").innerHTML = icon("pin") + '<span>' + escapeHtml(state.placeName) + '</span>';
+  $("screen-home").innerHTML = '<div class="loading-screen"><div class="spinner"></div><p>' + t("loadingSky", { place: escapeHtml(state.placeName) }) + '</p></div>';
 
   try{
     const tasks = [fetchWeather(lat, lon), fetchAirQuality(lat, lon)];
@@ -797,22 +1558,21 @@ async function fetchAllData(lat, lon, placeName){
       state.marine = results[2];
       state.marineUnavailable = !results[2];
     }
-    addToSavedLocations(placeName, lat, lon);
     renderAll();
   }catch(err){
     console.error(err);
     $("screen-home").innerHTML =
       '<div class="error-screen">' + icon("infocircle","","") +
-      '<h3>Couldn\u2019t load the forecast</h3>' +
-      '<p>We had trouble reaching the weather service. Check your connection and try again.</p>' +
-      '<button class="btn-block primary" id="retry-btn" style="max-width:220px;">Try again</button></div>';
+      '<h3>' + t("errLoadTitle") + '</h3>' +
+      '<p>' + t("errLoadMsg") + '</p>' +
+      '<button class="btn-block primary" id="retry-btn" style="max-width:220px;">' + t("tryAgain") + '</button></div>';
     $("retry-btn").addEventListener("click", () => fetchAllData(lat, lon, placeName));
   }
 }
 
 function addToSavedLocations(name, lat, lon){
   const exists = state.savedLocations.find(l => Math.abs(l.lat-lat)<0.01 && Math.abs(l.lon-lon)<0.01);
-  if(!exists) state.savedLocations.push({ name: name || "Location", lat, lon });
+  if(!exists) state.savedLocations.push({ name: name || t("locationWord"), lat, lon });
 }
 
 async function fetchWeather(lat, lon){
@@ -871,23 +1631,27 @@ const WEATHER_CODES = {
   85:{desc:"Snow showers",icon:"cloudsnow"}, 86:{desc:"Snow showers",icon:"cloudsnow"},
   95:{desc:"Thunderstorm",icon:"cloudbolt"}, 96:{desc:"Thunderstorm, hail",icon:"cloudbolt"}, 99:{desc:"Thunderstorm, hail",icon:"cloudbolt"}
 };
-function weatherInfo(code){ return WEATHER_CODES[code] || {desc:"Unsettled", icon:"cloud"}; }
+function weatherInfo(code){
+  const w = WEATHER_CODES[code] || {desc:"Unsettled", icon:"cloud"};
+  const tr = WX_TR[LANG];
+  return { desc: (tr && tr[w.desc]) || w.desc, icon: w.icon };
+}
 function aqiCategory(aqi){
-  if(aqi == null) return {label:"Unavailable", tone:"info"};
-  if(aqi <= 50) return {label:"Good", tone:"good"};
-  if(aqi <= 100) return {label:"Moderate", tone:"advisory"};
-  if(aqi <= 150) return {label:"Unhealthy (Sensitive)", tone:"advisory"};
-  if(aqi <= 200) return {label:"Unhealthy", tone:"warning"};
-  if(aqi <= 300) return {label:"Very Unhealthy", tone:"warning"};
-  return {label:"Hazardous", tone:"warning"};
+  if(aqi == null) return {label:t("aqiNA"), tone:"info"};
+  if(aqi <= 50) return {label:t("aqiGood"), tone:"good"};
+  if(aqi <= 100) return {label:t("aqiModerate"), tone:"advisory"};
+  if(aqi <= 150) return {label:t("aqiUSG"), tone:"advisory"};
+  if(aqi <= 200) return {label:t("aqiUnhealthy"), tone:"warning"};
+  if(aqi <= 300) return {label:t("aqiVery"), tone:"warning"};
+  return {label:t("aqiHaz"), tone:"warning"};
 }
 function uvCategory(uv){
-  if(uv == null) return {label:"Unavailable", tone:"info"};
-  if(uv < 3) return {label:"Low", tone:"good"};
-  if(uv < 6) return {label:"Moderate", tone:"advisory"};
-  if(uv < 8) return {label:"High", tone:"advisory"};
-  if(uv < 11) return {label:"Very High", tone:"warning"};
-  return {label:"Extreme", tone:"warning"};
+  if(uv == null) return {label:t("aqiNA"), tone:"info"};
+  if(uv < 3) return {label:t("uvLow"), tone:"good"};
+  if(uv < 6) return {label:t("uvModerate"), tone:"advisory"};
+  if(uv < 8) return {label:t("uvHigh"), tone:"advisory"};
+  if(uv < 11) return {label:t("uvVeryHigh"), tone:"warning"};
+  return {label:t("uvExtreme"), tone:"warning"};
 }
 function formatClock(iso){
   if(!iso) return "—";
@@ -900,8 +1664,8 @@ function formatHour(iso){
   return h + ampm;
 }
 function dayLabel(iso, idx){
-  if(idx===0) return "Today";
-  return new Date(iso).toLocaleDateString("en-US",{weekday:"short"});
+  if(idx===0) return t("today");
+  return new Date(iso).toLocaleDateString(LOCALE[LANG],{weekday:"short"});
 }
 function findHourIndex(times, currentTime){
   if(!times || !times.length) return 0;
@@ -1155,8 +1919,11 @@ const NOTIF = {
 function generateNotifications(role, ctx, flags){
   const list = [];
   function add(category){
-    const tpl = NOTIF[category] && NOTIF[category][role];
-    if(tpl) list.push({ level:CATEGORY_LEVEL[category], icon:CATEGORY_ICON[category], tag:CATEGORY_TAG[category], title:tpl.title, msg:tpl.msg });
+    const table = (NOTIF_TR[LANG] && NOTIF_TR[LANG][category]) ? NOTIF_TR[LANG] : NOTIF;
+    const tpl = (table[category] && table[category][role]) || (NOTIF[category] && NOTIF[category][role]);
+    const enTag = CATEGORY_TAG[category];
+    const tag = (TAG_TR[LANG] && TAG_TR[LANG][enTag]) || enTag;
+    if(tpl) list.push({ level:CATEGORY_LEVEL[category], icon:CATEGORY_ICON[category], tag:tag, title:tpl.title, msg:tpl.msg });
   }
   if(flags.thunder) add("thunder");
   else if(flags.heavyRain) add("heavyRain");
@@ -1234,9 +2001,10 @@ function computeScore(role, ctx, flags){
   if(isRisk){ tone = score <= 30 ? "success" : score <= 60 ? "warning" : "danger"; }
   else { tone = score >= 70 ? "success" : score >= 40 ? "warning" : "danger"; }
   let band;
-  if(isRisk){ band = score<=30?"Low":score<=60?"Moderate":score<=80?"High":"Severe"; }
-  else { band = score>=70?"Good":score>=40?"Fair":"Poor"; }
-  return { score, tone, band, label: SCORE_LABEL[role], isRisk };
+  if(isRisk){ band = score<=30?t("bandLow"):score<=60?t("bandModerate"):score<=80?t("bandHigh"):t("bandSevere"); }
+  else { band = score>=70?t("bandGood"):score>=40?t("bandFair"):t("bandPoor"); }
+  const label = (SCORE_LABEL_TR[LANG] && SCORE_LABEL_TR[LANG][role]) || SCORE_LABEL[role];
+  return { score, tone, band, label, isRisk };
 }
 
 /* =======================================================================
@@ -1260,20 +2028,20 @@ function genericChipStatus(flags){
   return "good";
 }
 function computeChips(role, ctx, flags){
-  const labels = ROLE_CHIPS[role] || ["Outdoors","Activity","Plans"];
+  const labels = (CHIPS_TR[LANG] && CHIPS_TR[LANG][role]) || ROLE_CHIPS[role] || ["Outdoors","Activity","Plans"];
   const base = genericChipStatus(flags);
   if(role === "farmer"){
     const irrStatus = (flags.heavyRain || flags.moderateRain) ? "avoid" : (flags.lowSoil ? "good" : "caution");
     return [
       { label:labels[0], status: base },
       { label:labels[1], status: (flags.highWind||flags.heavyRain||flags.moderateRain) ? "avoid" : "good" },
-      { label: "Irrigation", status: irrStatus }
+      { label: t("irrigation"), status: irrStatus }
     ];
   }
   return labels.map(l => ({ label:l, status: base }));
 }
 const CHIP_ICON = { good:"checkcircle", caution:"alerttriangle", avoid:"close" };
-const CHIP_TEXT = { good:"Good", caution:"Caution", avoid:"Avoid" };
+const CHIP_TEXT_KEY = { good:"chipGood", caution:"chipCaution", avoid:"chipAvoid" };
 
 /* =======================================================================
    GAUGES (SVG arc speedometer)
@@ -1385,7 +2153,8 @@ $("app-refresh").addEventListener("click", () => { if(state.lat!=null) fetchAllD
 function renderAll(){
   const now = new Date();
   const h = now.getHours();
-  $("greet-hi").textContent = h<12 ? "Good morning" : h<17 ? "Good afternoon" : "Good evening";
+  const greet = h<12 ? t("greetMorning") : h<17 ? t("greetAfternoon") : t("greetEvening");
+  $("greet-hi").textContent = session.name ? greet + ", " + session.name.split(" ")[0] : greet;
   $("greet-place").innerHTML = icon("pin") + '<span>' + escapeHtml(state.placeName) + '</span>';
   updateBell();
   renderHome();
@@ -1397,7 +2166,6 @@ function renderAll(){
 function renderHome(){
   const ctx = buildContext();
   const flags = computeFlags(ctx);
-  const roleInfo = ROLES[state.role];
   const wInfo = weatherInfo(ctx.weatherCode);
   const score = computeScore(state.role, ctx, flags);
   const aqiCat = aqiCategory(ctx.aqi);
@@ -1410,13 +2178,13 @@ function renderHome(){
         '<div><div class="hero-cond">' + icon("pin") + '<span>' + escapeHtml(ctx.placeName) + '</span></div>' +
         '<div class="hero-temp">' + (ctx.tempC!=null?Math.round(ctx.tempC):"—") + '&deg;</div>' +
         '<div class="hero-desc">' + wInfo.desc + '</div>' +
-        '<div class="hero-feels">Feels like ' + (ctx.feelsLike!=null?Math.round(ctx.feelsLike):"—") + '&deg; &middot; H:' + (ctx.tempMax!=null?Math.round(ctx.tempMax):"—") + '&deg; L:' + (ctx.tempMin!=null?Math.round(ctx.tempMin):"—") + '&deg;</div></div>' +
+        '<div class="hero-feels">' + t("feels", { t:(ctx.feelsLike!=null?Math.round(ctx.feelsLike):"—"), hi:(ctx.tempMax!=null?Math.round(ctx.tempMax):"—"), lo:(ctx.tempMin!=null?Math.round(ctx.tempMin):"—") }) + '</div></div>' +
         icon(heroIcon,"hero-icon-big") +
       '</div>' +
       '<div class="hero-stats">' +
-        '<div class="hero-stat"><div class="hs-label">Humidity</div><div class="hs-value">' + icon("droplet") + (ctx.humidity!=null?Math.round(ctx.humidity):"—") + '%</div></div>' +
-        '<div class="hero-stat"><div class="hs-label">Wind</div><div class="hs-value">' + icon("wind") + (ctx.windKmh!=null?Math.round(ctx.windKmh):"—") + ' km/h</div></div>' +
-        '<div class="hero-stat"><div class="hs-label">Visibility</div><div class="hs-value">' + icon("eye") + (ctx.visibilityKm!=null?ctx.visibilityKm.toFixed(1):"—") + ' km</div></div>' +
+        '<div class="hero-stat"><div class="hs-label">' + t("humidity") + '</div><div class="hs-value">' + icon("droplet") + (ctx.humidity!=null?Math.round(ctx.humidity):"—") + '%</div></div>' +
+        '<div class="hero-stat"><div class="hs-label">' + t("wind") + '</div><div class="hs-value">' + icon("wind") + (ctx.windKmh!=null?Math.round(ctx.windKmh):"—") + ' km/h</div></div>' +
+        '<div class="hero-stat"><div class="hs-label">' + t("visibility") + '</div><div class="hs-value">' + icon("eye") + (ctx.visibilityKm!=null?ctx.visibilityKm.toFixed(1):"—") + ' km</div></div>' +
       '</div>' +
     '</div>';
 
@@ -1424,9 +2192,9 @@ function renderHome(){
     '<div class="card score-card">' +
       ringGauge(score.score, score.tone) +
       '<div class="score-copy">' +
-        '<div class="sc-label">' + roleInfo.short + '</div>' +
+        '<div class="sc-label">' + roleShort(state.role) + '</div>' +
         '<h3>' + score.label + ': ' + score.score + '/100</h3>' +
-        '<p>' + (score.isRisk ? "Risk level: " : "Rating: ") + score.band + ' &mdash; based on rain, heat, air quality, UV and wind right now.</p>' +
+        '<p>' + (score.isRisk ? t("riskLevel") : t("rating")) + ': ' + score.band + ' &mdash; ' + t("scoreBasis") + '</p>' +
       '</div>' +
     '</div>';
 
@@ -1434,19 +2202,19 @@ function renderHome(){
     '<div class="gauge-row">' +
       buildArcGauge(ctx.aqi, 0, 300, [
         {upto:50,color:"var(--success)"},{upto:100,color:"var(--warning)"},{upto:300,color:"var(--danger)"}
-      ], "", "Good", "Severe", "Air Quality Index", aqiCat.label, toneVar(aqiCat.tone)) +
+      ], "", t("gGood"), t("gSevere"), t("aqiTitle"), aqiCat.label, toneVar(aqiCat.tone)) +
       buildArcGauge(ctx.uvIndex, 0, 11, [
         {upto:2,color:"var(--success)"},{upto:7,color:"var(--warning)"},{upto:11,color:"var(--danger)"}
-      ], "", "Low", "Extreme", "UV Index", uvCat.label, toneVar(uvCat.tone)) +
+      ], "", t("gLow"), t("gExtreme"), t("uvTitle"), uvCat.label, toneVar(uvCat.tone)) +
     '</div>';
 
   $("screen-home").innerHTML =
     heroHtml + scoreHtml +
-    '<div class="section-title">Next 24 hours</div>' + hourlyForecastHtml(ctx) +
+    '<div class="section-title">' + t("next24") + '</div>' + hourlyForecastHtml(ctx) +
     roleTilesHtml(state.role, ctx, flags) +
-    '<div class="section-title">Air &amp; UV</div>' + gaugesHtml +
-    '<div class="section-title">7-day forecast</div>' + dailyForecastHtml(ctx) +
-    '<div class="footnote">Weather from Open-Meteo &middot; Air quality from Open-Meteo Air Quality' + (state.role==="beach" ? " &middot; Sea conditions from Open-Meteo Marine" : "") + '. For official severe weather warnings, always check IMD.</div>';
+    '<div class="section-title">' + t("airUv") + '</div>' + gaugesHtml +
+    '<div class="section-title">' + t("sevenDay") + '</div>' + dailyForecastHtml(ctx) +
+    '<div class="footnote">' + t("footHome", { sea: state.role==="beach" ? t("footSea") : "" }) + '</div>';
 
   $("screen-home").querySelectorAll("button.day-main").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -1469,9 +2237,9 @@ function updateBell(){
   if(old) old.remove();
   if(serious){
     btn.insertAdjacentHTML("beforeend", '<span class="bell-badge' + (warnings ? '' : ' advisory') + '">' + (serious > 9 ? "9+" : serious) + '</span>');
-    btn.setAttribute("aria-label", "Alerts and suggestions, " + serious + (serious===1 ? " alert" : " alerts"));
+    btn.setAttribute("aria-label", t("ariaAlertsN", { n: serious }));
   } else {
-    btn.setAttribute("aria-label", "Alerts and suggestions");
+    btn.setAttribute("aria-label", t("ariaAlerts"));
   }
 }
 
@@ -1496,10 +2264,10 @@ function hourlyForecastHtml(ctx){
   let hi = -Infinity, hiIdx = ctx.hIdx;
   for(let i=ctx.hIdx;i<end;i++){ if(temp[i] > hi){ hi = temp[i]; hiIdx = i; } }
   let summary;
-  if(firstRain === ctx.hIdx) summary = '<strong>Rain likely now</strong>, up to ' + Math.round(peakRain) + '% chance over the next 24 hours.';
-  else if(firstRain !== -1) summary = '<strong>Rain likely from ' + formatHour(times[firstRain]) + '</strong>, peaking at ' + Math.round(peakRain) + '% chance.';
-  else summary = '<strong>No significant rain expected</strong> in the next 24 hours.';
-  summary += ' Warmest around ' + formatHour(times[hiIdx]) + ' at ' + Math.round(hi) + '&deg;.';
+  if(firstRain === ctx.hIdx) summary = t("rainNow", { p: Math.round(peakRain) });
+  else if(firstRain !== -1) summary = t("rainFrom", { h: formatHour(times[firstRain]), p: Math.round(peakRain) });
+  else summary = t("noRain");
+  summary += t("warmest", { h: formatHour(times[hiIdx]), t: Math.round(hi) });
 
   let cells = "";
   for(let i=ctx.hIdx;i<end;i++){
@@ -1507,7 +2275,7 @@ function hourlyForecastHtml(ctx){
     const code = isNow ? ctx.weatherCode : codes[i];
     const r = rain[i];
     cells += '<div class="hcell' + (isNow ? " now" : "") + '">' +
-      '<div class="hc-time">' + (isNow ? "Now" : formatHour(times[i])) + '</div>' +
+      '<div class="hc-time">' + (isNow ? t("now") : formatHour(times[i])) + '</div>' +
       icon(hourIcon(code, isNow ? (ctx.isDay?1:0) : isDay[i])) +
       '<div class="hc-temp">' + Math.round(temp[i]) + '&deg;</div>' +
       '<div class="hc-rain">' + (r != null && r >= 20 ? Math.round(r) + '%' : '') + '</div>' +
@@ -1524,7 +2292,7 @@ function dailyForecastHtml(ctx){
   const span = Math.max(1, hi - lo);
   const pct = v => ((v - lo) / span) * 100;
 
-  const rows = d.time.map((t,i) => {
+  const rows = d.time.map((day,i) => {
     const fi = weatherInfo(d.weather_code[i]);
     const tmin = d.temperature_2m_min[i], tmax = d.temperature_2m_max[i];
     const left = pct(tmin), width = Math.max(4, pct(tmax) - left);
@@ -1532,7 +2300,7 @@ function dailyForecastHtml(ctx){
       ? '<span class="range-now" style="left:' + Math.max(0, Math.min(100, pct(ctx.tempC))) + '%;"></span>' : '';
     const rainTxt = d.precipitation_probability_max[i] >= 10 ? Math.round(d.precipitation_probability_max[i]) + '%' : '';
     const inner =
-      '<span class="dl-day">' + dayLabel(t,i) + '</span>' +
+      '<span class="dl-day">' + dayLabel(day,i) + '</span>' +
       icon(fi.icon, "wx") +
       '<span class="dl-rain">' + rainTxt + '</span>' +
       '<span class="dl-min">' + Math.round(tmin) + '&deg;</span>' +
@@ -1547,11 +2315,11 @@ function dailyForecastHtml(ctx){
     return '<div class="day-row">' +
       '<button class="day-main" aria-expanded="false">' + inner + icon("chevron","chev") + '</button>' +
       '<div class="day-detail">' +
-        '<div class="dd-sum">' + fi.desc + ', ' + Math.round(tmin) + '&deg; to ' + Math.round(tmax) + '&deg;</div>' +
-        '<div>Rain chance<b>' + Math.round(d.precipitation_probability_max[i]) + '%</b></div>' +
-        '<div>Max wind<b>' + (wind!=null ? Math.round(wind) + ' km/h' : '—') + '</b></div>' +
-        '<div>Max UV<b>' + (uv!=null ? Math.round(uv) + ' (' + uvCategory(uv).label + ')' : '—') + '</b></div>' +
-        '<div>Sunrise / sunset<b>' + formatClock(d.sunrise[i]) + ' / ' + formatClock(d.sunset[i]) + '</b></div>' +
+        '<div class="dd-sum">' + t("dayRange", { desc: fi.desc, min: Math.round(tmin), max: Math.round(tmax) }) + '</div>' +
+        '<div>' + t("rainChance") + '<b>' + Math.round(d.precipitation_probability_max[i]) + '%</b></div>' +
+        '<div>' + t("maxWind") + '<b>' + (wind!=null ? Math.round(wind) + ' km/h' : '—') + '</b></div>' +
+        '<div>' + t("maxUv") + '<b>' + (uv!=null ? Math.round(uv) + ' (' + uvCategory(uv).label + ')' : '—') + '</b></div>' +
+        '<div>' + t("sunriseSunset") + '<b>' + formatClock(d.sunrise[i]) + ' / ' + formatClock(d.sunset[i]) + '</b></div>' +
       '</div>' +
     '</div>';
   }).join("");
@@ -1568,7 +2336,7 @@ function notifCardHtml(n){
   '</div>';
 }
 function chipHtml(c){
-  return '<div class="chip ' + c.status + '">' + icon(CHIP_ICON[c.status]) + '<span>' + c.label + ': ' + CHIP_TEXT[c.status] + '</span></div>';
+  return '<div class="chip ' + c.status + '">' + icon(CHIP_ICON[c.status]) + '<span>' + c.label + ': ' + t(CHIP_TEXT_KEY[c.status]) + '</span></div>';
 }
 
 /* Role tiles on Home — only readings that aren't already shown in the hero, gauges or forecast. */
@@ -1590,22 +2358,22 @@ function roleTilesHtml(role, ctx, flags){
   let dayLen = "—";
   if(ctx.sunrise && ctx.sunset){
     const mins = Math.round((new Date(ctx.sunset) - new Date(ctx.sunrise)) / 60000);
-    dayLen = Math.floor(mins/60) + "h " + (mins%60) + "m";
+    dayLen = t("dayLen", { h: Math.floor(mins/60), m: mins%60 });
   }
   const T = {
-    rain3:   () => tile("cloudrain","Rain, next 3h", r3!=null?Math.round(r3):"—","%", r3==null?"":(r3>=50?"Likely":r3>=20?"Possible":"Unlikely")),
-    sunrise: () => tile("sunrise","Sunrise", formatClock(ctx.sunrise),"",""),
-    sunset:  () => tile("sunset","Sunset", formatClock(ctx.sunset),"",""),
-    daylen:  () => tile("sun","Daylight", dayLen,"",""),
-    maxwind: () => tile("wind","Max wind today", maxWind!=null?Math.round(maxWind):"—","km/h", maxWind!=null && maxWind>=35?"Gusty":""),
-    pm25:    () => tile("aqi","PM2.5", ctx.pm25!=null?Math.round(ctx.pm25):"—", ctx.pm25!=null?"µg/m³":"", ctx.pm25==null?"":(ctx.pm25>55?"High":ctx.pm25>35?"Elevated":"Low")),
-    pollen:  () => tile("leaf","Pollen", ctx.pollen!=null?Math.round(ctx.pollen):"—", ctx.pollen!=null?"grains/m³":"", ctx.pollen==null?"Not available in this region":(ctx.pollen>40?"High":ctx.pollen>10?"Moderate":"Low")),
-    soil:    () => tile("drophalf","Soil moisture", ctx.soilMoisture!=null?Math.round(ctx.soilMoisture*100):"—", ctx.soilMoisture!=null?"%":"", ctx.soilMoisture==null?"Not available here":(flags.highSoil?"High":flags.lowSoil?"Low":"Normal")),
-    frost:   () => tile("thermometer","Frost risk", flags.cold?"Possible":"Low","",""),
-    fog:     () => tile("fog","Fog risk", flags.lowVisibility?"Present":"Low","",""),
-    wave:    () => tile("waves","Wave height", ctx.marine && ctx.marine.waveHeight!=null?ctx.marine.waveHeight.toFixed(1):"—","m",""),
-    seatemp: () => tile("droplet","Sea temp", ctx.marine && ctx.marine.seaTemp!=null?Math.round(ctx.marine.seaTemp):"—","°C",""),
-    period:  () => tile("activity","Wave period", ctx.marine && ctx.marine.wavePeriod!=null?Math.round(ctx.marine.wavePeriod):"—","s","")
+    rain3:   () => tile("cloudrain",t("rain3"), r3!=null?Math.round(r3):"—","%", r3==null?"":(r3>=50?t("likely"):r3>=20?t("possible"):t("unlikely"))),
+    sunrise: () => tile("sunrise",t("sunrise"), formatClock(ctx.sunrise),"",""),
+    sunset:  () => tile("sunset",t("sunset"), formatClock(ctx.sunset),"",""),
+    daylen:  () => tile("sun",t("daylight"), dayLen,"",""),
+    maxwind: () => tile("wind",t("maxWindToday"), maxWind!=null?Math.round(maxWind):"—","km/h", maxWind!=null && maxWind>=35?t("gusty"):""),
+    pm25:    () => tile("aqi","PM2.5", ctx.pm25!=null?Math.round(ctx.pm25):"—", ctx.pm25!=null?"µg/m³":"", ctx.pm25==null?"":(ctx.pm25>55?t("high"):ctx.pm25>35?t("elevated"):t("low"))),
+    pollen:  () => tile("leaf",t("pollen"), ctx.pollen!=null?Math.round(ctx.pollen):"—", ctx.pollen!=null?"grains/m³":"", ctx.pollen==null?t("notAvailRegion"):(ctx.pollen>40?t("high"):ctx.pollen>10?t("bandModerate"):t("low"))),
+    soil:    () => tile("drophalf",t("soilMoisture"), ctx.soilMoisture!=null?Math.round(ctx.soilMoisture*100):"—", ctx.soilMoisture!=null?"%":"", ctx.soilMoisture==null?t("notAvailHere"):(flags.highSoil?t("high"):flags.lowSoil?t("low"):t("normal"))),
+    frost:   () => tile("thermometer",t("frostRisk"), flags.cold?t("possibleV"):t("lowV"),"",""),
+    fog:     () => tile("fog",t("fogRisk"), flags.lowVisibility?t("present"):t("lowV"),"",""),
+    wave:    () => tile("waves",t("waveHeight"), ctx.marine && ctx.marine.waveHeight!=null?ctx.marine.waveHeight.toFixed(1):"—","m",""),
+    seatemp: () => tile("droplet",t("seaTemp"), ctx.marine && ctx.marine.seaTemp!=null?Math.round(ctx.marine.seaTemp):"—","°C",""),
+    period:  () => tile("activity",t("wavePeriod"), ctx.marine && ctx.marine.wavePeriod!=null?Math.round(ctx.marine.wavePeriod):"—","s","")
   };
   const SETS = {
     health:["pm25","pollen","rain3","sunset"],
@@ -1621,7 +2389,7 @@ function roleTilesHtml(role, ctx, flags){
   };
   let keys = SETS[role] || ["rain3","sunrise","sunset","maxwind"];
   if(role === "beach" && !ctx.marine) keys = ["rain3","maxwind","sunrise","sunset"];
-  return '<div class="section-title">Details for you</div>' +
+  return '<div class="section-title">' + t("detailsForYou") + '</div>' +
     '<div class="tile-grid">' + keys.map(k => T[k]()).join("") + '</div>';
 }
 
@@ -1639,7 +2407,7 @@ function findBestActiveHour(ctx){
   return formatHour(times[bestIdx]);
 }
 function findBestSurfHour(ctx){
-  if(!ctx.marine || !ctx.marine.hourlyTimes) return "Check back after refreshing";
+  if(!ctx.marine || !ctx.marine.hourlyTimes) return t("checkBackSurf");
   const times = ctx.marine.hourlyTimes, wave = ctx.marine.hourlyWave;
   let bestIdx = 0, bestScore = -Infinity;
   const nowIdx = findHourIndex(times, ctx.currentTime);
@@ -1654,23 +2422,23 @@ function findBestSurfHour(ctx){
 }
 function findDepartureAdvice(ctx){
   const times = ctx.hourly.time, rain = ctx.hourly.precipitation_probability;
-  if(!times || !rain) return "No timing concerns identified today.";
+  if(!times || !rain) return t("depNoTiming");
   const end = Math.min(times.length, ctx.hIdx + 12);
   for(let i=ctx.hIdx;i<end;i++){
     if(rain[i] >= 60){
-      return "Rain risk rises sharply around " + formatHour(times[i]) + " — consider leaving before then.";
+      return t("depRain", { h: formatHour(times[i]) });
     }
   }
-  return "No major rain-timing concerns for today's commute.";
+  return t("depNone");
 }
 function packingSuggestionHtml(flags){
   const items = [];
-  if(flags.heavyRain || flags.moderateRain || flags.lightRainChance) items.push({icon:"umbrella", label:"Umbrella"});
-  if(flags.cold) items.push({icon:"backpack", label:"Warm layer"});
-  if(flags.hot || flags.extremeHeat) items.push({icon:"droplet", label:"Water bottle"});
-  if(flags.highUV) items.push({icon:"shieldsun", label:"Sunscreen"});
-  if(flags.poorAQI || flags.moderateAQI) items.push({icon:"mask", label:"Mask"});
-  if(items.length===0) items.push({icon:"checkcircle", label:"No special items needed"});
+  if(flags.heavyRain || flags.moderateRain || flags.lightRainChance) items.push({icon:"umbrella", label:t("umbrella")});
+  if(flags.cold) items.push({icon:"backpack", label:t("warmLayer")});
+  if(flags.hot || flags.extremeHeat) items.push({icon:"droplet", label:t("waterBottle")});
+  if(flags.highUV) items.push({icon:"shieldsun", label:t("sunscreen")});
+  if(flags.poorAQI || flags.moderateAQI) items.push({icon:"mask", label:t("mask")});
+  if(items.length===0) items.push({icon:"checkcircle", label:t("noItems")});
   return '<div class="card"><div class="chip-row" style="margin-top:0;">' + items.map(it => '<div class="chip">' + icon(it.icon) + '<span>' + it.label + '</span></div>').join("") + '</div></div>';
 }
 function eventPlannerHtml(ctx){
@@ -1678,7 +2446,7 @@ function eventPlannerHtml(ctx){
   if(!daily || !daily.time) return "";
   const opts = daily.time.map((t,i) => '<option value="' + i + '">' + dayLabel(t,i) + '</option>').join("");
   return '<div style="margin-bottom:14px;">' +
-    '<label for="event-day-select" style="font-size:12.5px; font-weight:600; color:var(--muted);">Check a date for your event</label>' +
+    '<label for="event-day-select" style="font-size:12.5px; font-weight:600; color:var(--muted);">' + t("checkDate") + '</label>' +
     '<select id="event-day-select" class="search-input" style="margin-top:6px;">' + opts + '</select>' +
     '<div id="event-day-result" style="margin-top:12px;"></div>' +
   '</div>';
@@ -1699,8 +2467,8 @@ function renderEventDayResult(){
     '<div class="card" style="margin-bottom:0;"><div style="display:flex; align-items:center; gap:14px;">' +
       ringGauge(comfort, tone) +
       '<div class="score-copy"><div class="sc-label">' + dayLabel(daily.time[i], i) + '</div>' +
-      '<h3>Comfort: ' + comfort + '/100</h3>' +
-      '<p>Rain ' + Math.round(rain) + '% &middot; ' + Math.round(tmin) + '&deg;–' + Math.round(tmax) + '&deg;C' + (wind!=null?' &middot; Wind '+Math.round(wind)+'km/h':'') + '</p></div>' +
+      '<h3>' + t("comfort") + ': ' + comfort + '/100</h3>' +
+      '<p>' + t("rainW") + ' ' + Math.round(rain) + '% &middot; ' + Math.round(tmin) + '&deg;–' + Math.round(tmax) + '&deg;C' + (wind!=null?' &middot; ' + t("windW") + ' '+Math.round(wind)+' km/h':'') + '</p></div>' +
     '</div></div>';
 }
 document.addEventListener("change", (e) => { if(e.target && e.target.id === "event-day-select") renderEventDayResult(); });
@@ -1719,16 +2487,16 @@ function dayComfort(d, i){
 function roleTipText(role, ctx, flags){
   const rainy = flags.heavyRain || flags.moderateRain || flags.thunder;
   switch(role){
-    case "health": return (flags.poorAQI||flags.moderateAQI) ? "Prefer indoor activity today, especially for sensitive groups." : "Safe to spend time outside. No significant respiratory risk right now.";
-    case "fitness": return rainy ? "Plan an indoor session as a backup in case the rain arrives early." : (flags.hot||flags.extremeHeat) ? "Keep sessions short and hydrate every 15 to 20 minutes." : "Conditions suit a normal outdoor session.";
-    case "farmer": return (flags.lowSoil && !rainy) ? "Irrigation recommended today." : flags.highSoil ? "Skip irrigation. Soil moisture is sufficient." : "Monitor soil moisture. No urgent action needed.";
-    case "commuter": return findDepartureAdvice(ctx) + " Live traffic isn\u2019t included; this is weather-based only.";
-    case "parent": return flags.heavyRain ? "Plan the school pickup around the rain. The hourly forecast on Home shows when it eases." : "No major disruption expected for school drop-off or pickup today.";
-    case "student": return rainy ? "Leave about 10 minutes early and keep your bag waterproofed." : "A normal commute is expected today.";
-    case "worker": return (flags.hot||flags.extremeHeat) ? "Schedule heavy tasks before 11 AM and take regular shade breaks." : flags.highWind ? "Hold off on height work while winds are strong." : "Conditions are workable for outdoor tasks.";
-    case "traveler": return rainy ? "Lean on indoor sightseeing today and keep transfers flexible." : "A good day for outdoor sightseeing.";
-    case "beach": return ctx.marine ? "Tide-extreme timings aren\u2019t available from this data source." : "This location doesn\u2019t look coastal, or sea data isn\u2019t available. Search a coastal location to get wave details.";
-    case "event": return rainy ? "Confirm your covered or indoor backup before guests arrive." : "Outdoor setup looks workable for today.";
+    case "health": return (flags.poorAQI||flags.moderateAQI) ? t("tipHealthAqi") : t("tipHealthOk");
+    case "fitness": return rainy ? t("tipFitRain") : (flags.hot||flags.extremeHeat) ? t("tipFitHot") : t("tipFitOk");
+    case "farmer": return (flags.lowSoil && !rainy) ? t("tipFarmIrr") : flags.highSoil ? t("tipFarmSkip") : t("tipFarmMon");
+    case "commuter": return findDepartureAdvice(ctx) + t("trafficNote");
+    case "parent": return flags.heavyRain ? t("tipParentRain") : t("tipParentOk");
+    case "student": return rainy ? t("tipStudentRain") : t("tipStudentOk");
+    case "worker": return (flags.hot||flags.extremeHeat) ? t("tipWorkerHot") : flags.highWind ? t("tipWorkerWind") : t("tipWorkerOk");
+    case "traveler": return rainy ? t("tipTravRain") : t("tipTravOk");
+    case "beach": return ctx.marine ? t("tipBeachMarine") : t("tipBeachNo");
+    case "event": return rainy ? t("tipEventRain") : t("tipEventOk");
   }
   return "";
 }
@@ -1746,38 +2514,42 @@ function renderSuggestionsTab(){
   // Best time today
   let bestTitle, bestText;
   if(role === "beach"){
-    bestTitle = "Best time in the water";
-    bestText = ctx.marine ? "Around " + findBestSurfHour(ctx) + ", when waves are closest to a comfortable height." : "Needs sea data, which isn\u2019t available for this location.";
+    bestTitle = t("bestTimeWater");
+    bestText = ctx.marine ? t("aroundSurf", { h: findBestSurfHour(ctx) }) : t("needsSea");
   } else {
-    bestTitle = role === "farmer" ? "Best time for fieldwork" : role === "fitness" ? "Best time to train" : "Best time to be outdoors";
-    bestText = "Around " + findBestActiveHour(ctx) + ", balancing temperature, UV and rain chance.";
+    bestTitle = role === "farmer" ? t("bestTimeField") : role === "fitness" ? t("bestTimeTrain") : t("bestTimeOut");
+    bestText = t("aroundActive", { h: findBestActiveHour(ctx) });
   }
 
   // Best day this week
   const d = ctx.daily;
   let bestDay = 1, bestVal = -1;
   for(let i=1;i<d.time.length;i++){ const c = dayComfort(d,i); if(c > bestVal){ bestVal = c; bestDay = i; } }
-  const bestDayText = new Date(d.time[bestDay]).toLocaleDateString("en-US",{weekday:"long"}) +
-    " looks best " + ({fitness:"for training outdoors",health:"for time outside",farmer:"for fieldwork",student:"for campus plans",parent:"for family outings",worker:"for outdoor work",traveler:"for sightseeing",beach:"for a beach day",commuter:"for travel",event:"for an outdoor event"}[role] || "for outdoor plans") + ", with a comfort rating of " + bestVal + "/100.";
+  const purposes = PURPOSE_TR[LANG] || PURPOSE_TR.en;
+  const bestDayText = t("bestDayText", {
+    day: new Date(d.time[bestDay]).toLocaleDateString(LOCALE[LANG],{weekday:"long"}),
+    purpose: purposes[role] || purposes._,
+    v: bestVal
+  });
 
   const planRow = (ic, title, text) =>
     '<div class="plan-row"><div class="notif-icon">' + icon(ic) + '</div><div><h4>' + title + '</h4><p>' + text + '</p></div></div>';
 
   $("screen-suggestions").innerHTML =
-    '<div class="section-title">Alerts</div>' +
-    (cats.length > 2 ? '<div class="filter-row">' + cats.map(c => '<button class="filter-chip ' + (c===suggFilter?"active":"") + '" data-cat="' + c + '">' + (c==="all"?"All":c) + '</button>').join("") + '</div>' : '') +
-    (filtered.length ? filtered.map(notifCardHtml).join("") : '<div class="empty-state">No alerts in this category.</div>') +
-    '<div class="section-title">Right now</div>' +
+    '<div class="section-title">' + t("alertsTitle") + '</div>' +
+    (cats.length > 2 ? '<div class="filter-row">' + cats.map(c => '<button class="filter-chip ' + (c===suggFilter?"active":"") + '" data-cat="' + c + '">' + (c==="all"?t("all"):c) + '</button>').join("") + '</div>' : '') +
+    (filtered.length ? filtered.map(notifCardHtml).join("") : '<div class="empty-state">' + t("noAlertsCat") + '</div>') +
+    '<div class="section-title">' + t("rightNow") + '</div>' +
     '<div class="card"><div class="chip-row" style="margin-top:0;">' + chips.map(chipHtml).join("") + '</div></div>' +
-    '<div class="section-title">Plan your day</div>' +
+    '<div class="section-title">' + t("planDay") + '</div>' +
     '<div class="card">' +
       planRow("clock", bestTitle, bestText) +
-      planRow("calendarstar", "Best day this week", bestDayText) +
-      planRow("bulb", "Tip for you", roleTipText(role, ctx, flags)) +
+      planRow("calendarstar", t("bestDayWeek"), bestDayText) +
+      planRow("bulb", t("tipForYou"), roleTipText(role, ctx, flags)) +
     '</div>' +
-    (role === "event" ? '<div class="section-title">Event date check</div>' + eventPlannerHtml(ctx) : '') +
-    '<div class="section-title">What to carry</div>' + packingSuggestionHtml(flags) +
-    '<div class="footnote">Suggestions are generated from live readings for your selected interest. They\u2019re guidance, not an official warning.</div>';
+    (role === "event" ? '<div class="section-title">' + t("eventDateCheck") + '</div>' + eventPlannerHtml(ctx) : '') +
+    '<div class="section-title">' + t("whatToCarry") + '</div>' + packingSuggestionHtml(flags) +
+    '<div class="footnote">' + t("suggFoot") + '</div>';
 
   $("screen-suggestions").querySelectorAll(".filter-chip").forEach(chip => {
     chip.addEventListener("click", () => { suggFilter = chip.getAttribute("data-cat"); renderSuggestionsTab(); });
@@ -1785,7 +2557,16 @@ function renderSuggestionsTab(){
   if(role === "event") renderEventDayResult();
 }
 
-/* ---------------- PROFILE (interest + locations) ---------------- */
+/* ---------------- PROFILE (account + language + interest + locations) ---------------- */
+function accountCardHtml(){
+  const initial = escapeHtml((session.name || "?").trim().charAt(0).toUpperCase());
+  return '<div class="card">' +
+    '<div class="account-card"><div class="account-avatar">' + initial + '</div>' +
+    '<div style="min-width:0;"><div class="account-name">' + escapeHtml(session.name) + '</div><div class="account-sub">' + t("localSub") + '</div></div></div>' +
+    '<div class="btn-row"><button class="btn-block outline" id="logout-btn">' + t("logOut") + '</button></div>' +
+  '</div>';
+}
+
 function renderProfile(){
   const r = ROLES[state.role];
 
@@ -1793,35 +2574,48 @@ function renderProfile(){
     const active = Math.abs(loc.lat-state.lat)<0.01 && Math.abs(loc.lon-state.lon)<0.01;
     return '<div class="loc-row ' + (active?"active-loc":"") + '" role="button" tabindex="0" data-lat="' + loc.lat + '" data-lon="' + loc.lon + '" data-name="' + escapeHtml(loc.name) + '">' +
       '<div class="loc-icon-chip">' + icon("pin") + '</div>' +
-      '<div><div class="lr-name">' + escapeHtml(loc.name) + '</div><div class="lr-sub">' + (active?"Current":"Tap to switch") + '</div></div>' +
+      '<div><div class="lr-name">' + escapeHtml(loc.name) + '</div><div class="lr-sub">' + (active?t("current"):t("tapSwitch")) + '</div></div>' +
     '</div>';
   }).join("");
-  if(!rows) rows = '<div class="empty-state">No saved locations yet.</div>';
+  if(!rows) rows = '<div class="empty-state">' + t("noSaved") + '</div>';
 
   $("screen-profile").innerHTML =
-    '<div class="section-title">Your interest</div>' +
+    '<div class="section-title">' + t("account") + '</div>' +
+    accountCardHtml() +
+
+    '<div class="section-title">' + t("langLabel") + '</div>' +
+    '<div class="lang-switch profile-lang" role="group" aria-label="' + t("langLabel") + '">' +
+      '<button data-lang="en">English</button><button data-lang="hi">हिंदी</button><button data-lang="mr">मराठी</button>' +
+    '</div>' +
+
+    '<div class="section-title">' + t("yourInterest") + '</div>' +
     '<div class="card profile-role-card">' +
       '<div class="profile-icon-chip" style="background:' + r.chipSoft + '; color:' + r.chip + ';">' + icon(r.icon) + '</div>' +
-      '<div><h3 style="margin:0 0 4px; font-size:16px; color:var(--navy);">' + r.label + '</h3><p style="margin:0; font-size:12.5px; color:var(--muted);">' + roleDesc(state.role) + '</p></div>' +
+      '<div><h3 style="margin:0 0 4px; font-size:16px; color:var(--navy);">' + roleLabel(state.role) + '</h3><p style="margin:0; font-size:12.5px; color:var(--muted);">' + roleDesc(state.role) + '</p></div>' +
     '</div>' +
-    '<button class="btn-block outline" id="change-role-btn" style="margin-bottom:8px;">Change interest</button>' +
+    '<button class="btn-block outline" id="change-role-btn" style="margin-bottom:8px;">' + t("changeInterest") + '</button>' +
 
-    '<div class="section-title">Location</div>' +
+    '<div class="section-title">' + t("locationTitle") + '</div>' +
     rows +
-    '<button class="add-loc-btn" id="add-loc-btn">' + icon("plus") + '<span>Add a location</span></button>' +
+    '<button class="add-loc-btn" id="add-loc-btn">' + icon("plus") + '<span>' + t("addLocation") + '</span></button>' +
     '<div id="loc-search-wrap" style="display:none; margin-top:14px;">' +
-      '<input type="text" class="search-input" id="loc-search-input" placeholder="Search city or village" autocomplete="off">' +
+      '<input type="text" class="search-input" id="loc-search-input" placeholder="' + t("searchPh") + '" autocomplete="off">' +
       '<div class="suggestions" id="loc-suggestions"></div>' +
     '</div>' +
-    '<button class="btn-block outline gps-btn" id="change-loc-btn">' + icon("crosshair") + '<span>Use my current location</span></button>' +
+    '<button class="btn-block outline gps-btn" id="change-loc-btn">' + icon("crosshair") + '<span>' + t("useCurrentLoc") + '</span></button>' +
 
-    '<div class="section-title">About</div>' +
-    '<div class="card"><div class="profile-row"><span class="pr-label">' + icon("infocircle") + 'Weather data</span><span class="pr-val">Open-Meteo</span></div>' +
-    '<div class="profile-row"><span class="pr-label">' + icon("aqi") + 'Air quality data</span><span class="pr-val">Open-Meteo AQ</span></div>' +
-    (state.role==="beach" ? '<div class="profile-row"><span class="pr-label">' + icon("waves") + 'Marine data</span><span class="pr-val">Open-Meteo Marine</span></div>' : '') +
+    '<div class="section-title">' + t("about") + '</div>' +
+    '<div class="card"><div class="profile-row"><span class="pr-label">' + icon("infocircle") + t("weatherData") + '</span><span class="pr-val">Open-Meteo</span></div>' +
+    '<div class="profile-row"><span class="pr-label">' + icon("aqi") + t("aqData") + '</span><span class="pr-val">Open-Meteo AQ</span></div>' +
+    (state.role==="beach" ? '<div class="profile-row"><span class="pr-label">' + icon("waves") + t("marineData") + '</span><span class="pr-val">Open-Meteo Marine</span></div>' : '') +
     '</div>' +
-    '<div class="footnote">Mausam — Smart Weather. Personalized for you. A healthier, safer tomorrow.</div>';
+    '<div class="footnote">' + t("profileFoot") + '</div>';
 
+  $("screen-profile").querySelectorAll(".lang-switch button").forEach(b => {
+    const on = b.getAttribute("data-lang") === LANG;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+  });
   $("screen-profile").querySelectorAll(".loc-row").forEach(row => {
     const go = () => fetchAllData(parseFloat(row.getAttribute("data-lat")), parseFloat(row.getAttribute("data-lon")), row.getAttribute("data-name"));
     row.addEventListener("click", go);
@@ -1841,7 +2635,130 @@ function renderProfile(){
   });
   $("change-role-btn").addEventListener("click", () => { closeSheets(true); openInterestPicker(); });
   $("change-loc-btn").addEventListener("click", () => { closeSheets(true); showView("view-location"); });
+  $("logout-btn").addEventListener("click", logOut);
 }
+
+/* =======================================================================
+   LOGIN + SAVING (this phone only)
+   Name, interest, places and language are saved in this browser.
+   Nothing goes to a server. Log out clears it.
+======================================================================= */
+const STORE_KEY = "mausam:profile";
+const LANG_KEY = "mausam:lang";
+const session = { name:"" };
+let authReturnTo = "splash";
+
+function loadLocal(){
+  try{ const raw = localStorage.getItem(STORE_KEY); return raw ? JSON.parse(raw) : null; }catch(e){ return null; }
+}
+function clearLocal(){ try{ localStorage.removeItem(STORE_KEY); }catch(e){} }
+
+function profileData(){
+  return {
+    name: session.name,
+    role: state.role, lat: state.lat, lon: state.lon, placeName: state.placeName || "",
+    savedLocations: state.savedLocations.map(l => ({ name:l.name, lat:l.lat, lon:l.lon })),
+    lang: LANG
+  };
+}
+function saveProfile(){
+  if(!session.name) return;
+  try{ localStorage.setItem(STORE_KEY, JSON.stringify(profileData())); }catch(e){}
+}
+function applyProfile(p){
+  session.name = p.name || "";
+  state.role = p.role || null;
+  state.lat = (p.lat != null) ? p.lat : null;
+  state.lon = (p.lon != null) ? p.lon : null;
+  state.placeName = p.placeName || "";
+  state.savedLocations = Array.isArray(p.savedLocations) ? p.savedLocations.slice() : [];
+}
+function hasSetup(p){ return p && p.role && ROLES[p.role] && p.lat != null && p.lon != null; }
+function resetState(){
+  session.name = "";
+  state.role = null; state.lat = null; state.lon = null; state.placeName = "";
+  state.weather = null; state.aqi = null; state.marine = null; state.marineUnavailable = false;
+  state.savedLocations = [];
+}
+
+/* ---------------- LANGUAGE ---------------- */
+function applyStaticI18n(){
+  document.querySelectorAll("[data-i18n]").forEach(el => { el.innerHTML = t(el.getAttribute("data-i18n")); });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => { el.setAttribute("placeholder", t(el.getAttribute("data-i18n-ph"))); });
+  document.querySelectorAll("[data-i18n-aria]").forEach(el => { el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria"))); });
+  document.querySelectorAll(".lang-switch button").forEach(b => {
+    const on = b.getAttribute("data-lang") === LANG;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+  if(inIframe) $("env-banner").textContent = t("envBanner");
+}
+function setLang(l, opts){
+  if(LANGS.indexOf(l) === -1) l = "en";
+  LANG = l;
+  document.documentElement.lang = l;
+  try{ localStorage.setItem(LANG_KEY, l); }catch(e){}
+  suggFilter = "all";
+  applyStaticI18n();
+  buildInterestGrid();
+  if(state.weather) renderAll();
+  if(!(opts && opts.noSave)) saveProfile();
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest ? e.target.closest(".lang-switch button") : null;
+  if(b) setLang(b.getAttribute("data-lang"));
+});
+
+/* ---------------- LOGIN SCREEN ---------------- */
+function openAuth(returnTo){
+  authReturnTo = returnTo || "splash";
+  $("auth-status").classList.remove("show");
+  $("auth-name").value = session.name || "";
+  showView("view-auth");
+  setTimeout(() => $("auth-name").focus(), 50);
+}
+function loginSubmit(){
+  const name = $("auth-name").value.trim().replace(/\s+/g, " ").slice(0, 40);
+  if(!name){
+    $("auth-status").textContent = t("errName");
+    $("auth-status").classList.add("show");
+    return;
+  }
+  session.name = name;
+  saveProfile();
+  if(hasSetup(profileData())){
+    showView("view-app");
+    if(state.weather) renderAll(); else fetchAllData(state.lat, state.lon, state.placeName);
+  } else {
+    openInterestPicker();
+  }
+}
+$("auth-back").addEventListener("click", () => showView("view-splash"));
+$("login-btn").addEventListener("click", loginSubmit);
+$("auth-name").addEventListener("keydown", (e) => { if(e.key === "Enter") loginSubmit(); });
+$("auth-name").addEventListener("input", () => $("auth-status").classList.remove("show"));
+
+function logOut(){
+  if(!window.confirm(t("confirmLogout"))) return;
+  closeSheets(true);
+  clearLocal(); resetState();
+  showView("view-splash");
+}
+
+/* ---------------- START-UP ---------------- */
+function boot(){
+  const local = loadLocal();
+  let lang = "en";
+  try{ lang = (local && local.lang) || localStorage.getItem(LANG_KEY) || "en"; }catch(e){}
+  setLang(lang, { noSave:true });
+  if(!local || !local.name) return;          // not logged in → splash
+  applyProfile(local);
+  if(hasSetup(local)) fetchAllData(state.lat, state.lon, state.placeName);
+  else if(state.role) showView("view-location");
+  else openInterestPicker();
+}
+
+boot();
 
 })();
 </script>
